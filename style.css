@@ -32,6 +32,11 @@ body {
     padding-bottom: 100px;
 }
 
+.logo img{
+    height:40px;
+    width:auto;
+    
+}
 nav {
     background:#7c9e79;
     color: #fff;
@@ -318,3 +323,4 @@ nav ul li a:focus {
 
 
 }
+
