@@ -33,7 +33,7 @@ body {
 }
 
 nav {
-    background: linear-gradient(90deg, var(--accent-color), var(--accent-color2));
+    background:#7c9e79;
     color: #fff;
     padding: 12px 30px;
     position: sticky;
@@ -315,5 +315,6 @@ nav ul li a:focus {
         background: var(--accent-color2);
         font-size: 0.9rem;
     }
+
 
 }
