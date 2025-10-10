@@ -7,12 +7,12 @@ const menuData = {
         { name: "Flat white", description: "", price: "4.50", img: "imgs/flat_white.jpg" },
         { name: "Espresso", description: "", price: "4.50", img: "imgs/espresso.jpg" },
         { name: "Double Espresso", description: "", price: "4.50", img: "imgs/espresso.jpg" },
-        { name: "Americano", description: "", price: "4.50", img: "https://via.placeholder.com/400x300?text=Latte" },
-        { name: "Macchiato", description: "", price: "4.50", img: "https://via.placeholder.com/400x300?text=Latte" },
-        { name: "Espresso", description: "Strong Italian coffee.", price: "3.00", img: "https://via.placeholder.com/400x300?text=Espresso" },
-        { name: "Cappuccino", description: "Espresso, steamed milk, foam.", price: "4.75", img: "https://via.placeholder.com/400x300?text=Cappuccino" },
-        { name: "Hot chocolate", description: "", price: "4.50", img: "imgs/hot_chocolate.jpg" },
-        { name: "Tea", description: "", price: "4.50", img: "https://via.placeholder.com/400x300?text=Latte" },
+        { name: "Americano", description: "", price: "4.50", img: "" },
+        { name: "Macchiato", description: "", price: "4.50", img: "" },
+        { name: "Espresso", description: "Strong Italian coffee.", price: "3.00", img: "" },
+        { name: "Cappuccino", description: "Espresso, steamed milk, foam.", price: "4.75", img: "" },
+        { name: "Hot chocolate", description: "", price: "4.50", img: "" },
+        { name: "Tea", description: "", price: "4.50", img: "" },
 
     ],
     coldDrinks: {
@@ -40,31 +40,31 @@ const menuData = {
             { name: "Passion Fruit", description: "", price: "4.75", img: "" }
         ],
         juices: [
-            { name: "Orange", description: "", price: "4.75", img: "https://via.placeholder.com/400x300?text=Cappuccino" },
-            { name: "Lemon", description: "", price: "4.75", img: "https://via.placeholder.com/400x300?text=Cappuccino" },
-            { name: "Minted", description: "", price: "4.75", img: "https://via.placeholder.com/400x300?text=Cappuccino" },
+            { name: "Orange", description: "", price: "4.75", img: "" },
+            { name: "Lemon", description: "", price: "4.75", img: "" },
+            { name: "Minted", description: "", price: "4.75", img: "" },
         ],
        energyDrinks: [
-            { name: "Boom Boom Energy Drink", description: "", price: "4.75", img: "https://via.placeholder.com/400x300?text=Cappuccino" },
+            { name: "Boom Boom Energy Drink", description: "", price: "4.75", img: "" },
         ]
     },
     desserts: [
-        { name: "Nutella Crepe", description: "Rich layered chocolate delight.", price: "5.00", img: "https://via.placeholder.com/400x300?text=Chocolate+Cake" },
-        { name: "Oreo Crepe", description: "Pastry with nuts & honey syrup.", price: "4.00", img: "https://via.placeholder.com/400x300?text=Baklava" },
-        { name: "Lotus Crepe", description: "Coffee-flavored Italian dessert.", price: "5.50", img: "https://via.placeholder.com/400x300?text=Tiramisu" },
-        { name: "Kinder Crepe", description: "Coffee-flavored Italian dessert.", price: "5.50", img: "https://via.placeholder.com/400x300?text=Tiramisu" },
-        { name: "Cookies", description: "Coffee-flavored Italian dessert.", price: "5.50", img: "https://via.placeholder.com/400x300?text=Tiramisu" },
-        { name: "Lazy Cake", description: "Coffee-flavored Italian dessert.", price: "5.50", img: "https://via.placeholder.com/400x300?text=Tiramisu" },
-        { name: "Donuts", description: "Coffee-flavored Italian dessert.", price: "5.50", img: "https://via.placeholder.com/400x300?text=Tiramisu" },
+        { name: "Nutella Crepe", description: "Rich layered chocolate delight.", price: "5.00", img: "" },
+        { name: "Oreo Crepe", description: "Pastry with nuts & honey syrup.", price: "4.00", img: "" },
+        { name: "Lotus Crepe", description: "Coffee-flavored Italian dessert.", price: "5.50", img: "" },
+        { name: "Kinder Crepe", description: "Coffee-flavored Italian dessert.", price: "5.50", img: "" },
+        { name: "Cookies", description: "Coffee-flavored Italian dessert.", price: "5.50", img: "" },
+        { name: "Lazy Cake", description: "Coffee-flavored Italian dessert.", price: "5.50", img: "" },
+        { name: "Donuts", description: "Coffee-flavored Italian dessert.", price: "5.50", img: "" },
 
     ],
     shisha: [
-        { name: "Double Apple", description: "Sweet spicy apple blend.", price: "15.00", img: "https://via.placeholder.com/400x300?text=Double+Apple" },
-        { name: "Mint", description: "Cool, refreshing mint flavor.", price: "14.00", img: "https://via.placeholder.com/400x300?text=Mint" },
-        { name: "Lemond & Mint", description: "Cool, refreshing mint flavor.", price: "14.00", img: "https://via.placeholder.com/400x300?text=Mint" },
-        { name: "Love", description: "Cool, refreshing mint flavor.", price: "14.00", img: "https://via.placeholder.com/400x300?text=Mint" },
-        { name: "Blueberry", description: "Sweet blueberry aroma.", price: "16.00", img: "https://via.placeholder.com/400x300?text=Blueberry" },
-        { name: "Head Change", description: "Cool, refreshing mint flavor.", price: "14.00", img: "https://via.placeholder.com/400x300?text=Mint" }
+        { name: "Double Apple", description: "Sweet spicy apple blend.", price: "15.00", img: "" },
+        { name: "Mint", description: "Cool, refreshing mint flavor.", price: "14.00", img: "" },
+        { name: "Lemond & Mint", description: "Cool, refreshing mint flavor.", price: "14.00", img: "" },
+        { name: "Love", description: "Cool, refreshing mint flavor.", price: "14.00", img: "" },
+        { name: "Blueberry", description: "Sweet blueberry aroma.", price: "16.00", img: "" },
+        { name: "Head Change", description: "Cool, refreshing mint flavor.", price: "14.00", img: "" }
     ],
     food: {
         sandwiches: [
@@ -171,7 +171,7 @@ function scrollToTop() {
 
 // Event bindings
 window.onload = () => {
-    window.scrollTo(0);
+    window.scrollTo(0 , 0);
     renderMenu();
 
     // Other buttons
@@ -179,3 +179,4 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
