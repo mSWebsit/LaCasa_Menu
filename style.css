@@ -2,7 +2,7 @@
     --bg-color: #fafafa;
     --card-bg: #ffffff;
     --text-color: #333333;
-    --accent-color: #2ecc71;
+    --accent-color: #a3c49c;
     --accent-color2: #7c9e79;
     --card-shadow: rgba(0, 0, 0, 0.1);
 }
@@ -99,7 +99,8 @@ nav ul li a:focus {
 }
 
 .mini-nav a:hover {
-    background: transition:background-color 0.3s ease,box-shadow 0.3s ease;;
+    background: var(--accent-color);
+
 }
 
 .theme-toggle-btn {
@@ -323,6 +324,7 @@ nav ul li a:focus {
 
 
 }
+
 
 
 
