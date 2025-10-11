@@ -68,22 +68,22 @@ const menuData = {
         ]
     },
     desserts: [
-        { name: "Nutella Crepe", description: "Rich layered chocolate delight.", price: "5.00", img: "" },
-        { name: "Oreo Crepe", description: "Pastry with nuts & honey syrup.", price: "4.00", img: "" },
-        { name: "Lotus Crepe", description: "Coffee-flavored Italian dessert.", price: "5.50", img: "" },
-        { name: "Kinder Crepe", description: "Coffee-flavored Italian dessert.", price: "5.50", img: "" },
-        { name: "Cookies", description: "Coffee-flavored Italian dessert.", price: "5.50", img: "" },
-        { name: "Lazy Cake", description: "Coffee-flavored Italian dessert.", price: "5.50", img: "" },
-        { name: "Donuts", description: "Coffee-flavored Italian dessert.", price: "5.50", img: "" },
+        { name: "Nutella Crepe", description: "", price: "5.00", img: "" },
+        { name: "Oreo Crepe", description: "", price: "4.00", img: "" },
+        { name: "Lotus Crepe", description: "", price: "5.50", img: "" },
+        { name: "Kinder Crepe", description: "", price: "5.50", img: "" },
+        { name: "Cookies", description: "", price: "5.50", img: "" },
+        { name: "Lazy Cake", description: "", price: "5.50", img: "" },
+        { name: "Donuts", description: "", price: "5.50", img: "" },
 
     ],
     shisha: [
-        { name: "Double Apple", description: "Sweet spicy apple blend.", price: "$5.00", img: "" },
-        { name: "Mint", description: "Cool, refreshing mint flavor.", price: "$5.00", img: "" },
-        { name: "Lemond & Mint", description: "Cool, refreshing mint flavor.", price: "$5.00", img: "" },
-        { name: "Love", description: "Cool, refreshing mint flavor.", price: "$5.00", img: "" },
-        { name: "Blueberry", description: "Sweet blueberry aroma.", price: "$5.00", img: "" },
-        { name: "Head Change", description: "Cool, refreshing mint flavor.", price: "200,000L.L", img: "" }
+        { name: "Double Apple", description: "", price: "$5.00", img: "" },
+        { name: "Mint", description: "", price: "$5.00", img: "" },
+        { name: "Lemond & Mint", description: "", price: "$5.00", img: "" },
+        { name: "Love", description: "", price: "$5.00", img: "" },
+        { name: "Blueberry", description: "", price: "$5.00", img: "" },
+        { name: "Head Change", description: "", price: "200,000L.L", img: "" }
     ],
     food: {
         sandwiches: [
@@ -209,6 +209,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
