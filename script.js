@@ -55,6 +55,15 @@ const menuData = {
             { name: "Lemon", description: "", price: "$3.00", img: "" },
             { name: "Minted", description: "", price: "$3.00", img: "" },
         ],
+        water: [
+            {name:"500mL water", description: "", price: "50,000L.L", img: ""},
+            {name:"1.5L water", description: "", price: "50.000L.L", img: ""}  
+        ],
+        softDrinks: [
+            {name:"Pepsi", description: "", price: "$0.00", img: ""},
+            {name:"Miranda", description: "", price: "$0.00", img: ""},
+            {name:"7UP", description: "", price: "$0.00", img: ""}  
+        ],
        energyDrinks: [
             { name: "Boom Boom Energy Drink", description: "", price: "$2.00", img: "" },
         ]
@@ -70,12 +79,12 @@ const menuData = {
 
     ],
     shisha: [
-        { name: "Double Apple", description: "Sweet spicy apple blend.", price: "15.00", img: "" },
-        { name: "Mint", description: "Cool, refreshing mint flavor.", price: "14.00", img: "" },
-        { name: "Lemond & Mint", description: "Cool, refreshing mint flavor.", price: "14.00", img: "" },
-        { name: "Love", description: "Cool, refreshing mint flavor.", price: "14.00", img: "" },
-        { name: "Blueberry", description: "Sweet blueberry aroma.", price: "16.00", img: "" },
-        { name: "Head Change", description: "Cool, refreshing mint flavor.", price: "14.00", img: "" }
+        { name: "Double Apple", description: "Sweet spicy apple blend.", price: "$5.00", img: "" },
+        { name: "Mint", description: "Cool, refreshing mint flavor.", price: "$5.00", img: "" },
+        { name: "Lemond & Mint", description: "Cool, refreshing mint flavor.", price: "$5.00", img: "" },
+        { name: "Love", description: "Cool, refreshing mint flavor.", price: "$5.00", img: "" },
+        { name: "Blueberry", description: "Sweet blueberry aroma.", price: "$5.00", img: "" },
+        { name: "Head Change", description: "Cool, refreshing mint flavor.", price: "$0.00", img: "" }
     ],
     food: {
         sandwiches: [
@@ -190,5 +199,6 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
