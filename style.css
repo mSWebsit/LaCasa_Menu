@@ -3,7 +3,7 @@
     --card-bg: #ffffff;
     --text-color: #333333;
     --accent-color: #2ecc71;
-    --accent-color2: #27ae60;
+    --accent-color2: #7c9e79;
     --card-shadow: rgba(0, 0, 0, 0.1);
 }
 
@@ -38,7 +38,7 @@ body {
     
 }
 nav {
-    background:#7c9e79;
+    background: var(--accent-color2);
     color: #fff;
     padding: 12px 30px;
     position: sticky;
@@ -323,6 +323,7 @@ nav ul li a:focus {
 
 
 }
+
 
 
 
