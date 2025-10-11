@@ -114,15 +114,26 @@ const menuData = {
 function createCard(item) {
     const card = document.createElement("div");
     card.className = "menu-item";
-    card.innerHTML = `
-    <img src="${item.img}" alt="${item.name}" img.onerror=function(){this.onerror=null; this.src='imgs/no_img.jpg';} >
-    <div class="menu-details">
-      <h3>${item.name}</h3>
-      <p>${item.description}</p>
-      <p class="price">${item.price}</p>
-    </div>
+    const img = document.createElement("img");
+    img.src = item.img;
+    img.alt = item.name;
+    img.onerror = function () {
+    this.onerror = null;
+    this.src = "imgs/no_img.jpg";
+  };
+
+  const details = document.createElement("div");
+  details.className = "menu-details";
+  details.innerHTML = `
+    <h3>${item.name}</h3>
+    <p>${item.description}</p>
+    <p class="price">${item.price}</p>
   `;
-    return card;
+
+  card.appendChild(img);
+  card.appendChild(details);
+
+  return card;
 }
 
 function renderMenu() {
@@ -198,6 +209,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
