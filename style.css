@@ -41,6 +41,7 @@ nav {
     background: var(--accent-color2);
     color: #fff;
     padding: 12px 30px;
+    padding-bottom: 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -324,6 +325,7 @@ nav ul li a:focus {
 
 
 }
+
 
 
 
