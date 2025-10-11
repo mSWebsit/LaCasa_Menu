@@ -115,7 +115,7 @@ function createCard(item) {
     const card = document.createElement("div");
     card.className = "menu-item";
     card.innerHTML = `
-    <img src="${item.img}" alt="${item.name}">
+    <img src="${item.img}" alt="${item.name}" img.onerror=function(){this.onerror=null; this.src='images/no-img.png';} >
     <div class="menu-details">
       <h3>${item.name}</h3>
       <p>${item.description}</p>
@@ -198,6 +198,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
