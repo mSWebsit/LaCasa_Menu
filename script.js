@@ -7,9 +7,7 @@ const menuData = {
         { name: "Flat white", description: "", price: "$3.00", img: "imgs/flat_white.jpg" },
         { name: "Espresso", description: "", price: "$1.00", img: "imgs/espresso.jpg" },
         { name: "Double Espresso", description: "", price: "$1.50", img: "imgs/espresso.jpg" },
-        { name: "Nescafe 3in1", description: "", price: "$1.50", img: "" },
-        { name: "Americano", description: "", price: "$2.00", img: "" },
-        { name: "Americano", description: "", price: "$2.00", img: "" },
+        { name: "Nescafe ", description: "3in 1/ coffemet/ milk /nestle", price: "$1.50", img: "" },
      //   { name: "Macchiato", description: "", price: "4.50", img: "" },
         { name: "Cappuccino", description: "Espresso, steamed milk, foam.", price: "$3.50", img: "" },
         { name: "Hot chocolate", description: "", price: "$3.00", img: "" },
@@ -215,6 +213,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
