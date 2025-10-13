@@ -92,9 +92,9 @@ const menuData = {
     food: {
         sandwiches: [
             { name: "Halloum Pesto", description: "", price: "$3.00", img: "" },
-            { name: "Chesse", description: "", price: "", img: "$3.00" },
-            { name: "Labne", description: "", price: "", img: "$2.00" },
-            { name: "Turkey", description: "", price: "", img: "$3.00" }
+            { name: "Chesse", description: "", price: "$3.00", img: "" },
+            { name: "Labne", description: "", price: "$2.00", img: "" },
+            { name: "Turkey", description: "", price: "$3.00", img: "" }
         ],
         saj :[
             { name: "Zaater", description: "", price: "$1.00", img: "" },
@@ -213,6 +213,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
