@@ -1,62 +1,68 @@
 // Menu data
 const menuData = {
     hotDrinks: [
-        { name: "Latte", description: "Coffee with steamed milk.", price: "$3.50", img: "imgs/latte.png" },
-        { name: "Spanish Latte", description: "", price: "$5.00", img: "imgs/spanish_latte.png" },
-        { name: "Mocha Latte", description: "", price: "$5.00", img: "imgs/macha_latte.png" },
+        { name: "Latte", description: "Coffee with steamed milk.", price: "$2.50", img: "imgs/latte.png" },
+        { name: "Spanish Latte", description: "", price: "$3.50", img: "imgs/spanish_latte.png" },
+        { name: "Mocha Latte", description: "", price: "$3.50", img: "imgs/macha_latte.png" },
         { name: "Flat white", description: "", price: "$3.00", img: "imgs/flat_white.jpg" },
         { name: "Espresso", description: "", price: "$1.00", img: "imgs/espresso.jpg" },
         { name: "Double Espresso", description: "", price: "$1.50", img: "imgs/espresso.jpg" },
-        { name: "Americano", description: "", price: "$2.50", img: "" },
+        { name: "Nescafe 3in1", description: "", price: "$1.50", img: "" },
+        { name: "Americano", description: "", price: "$2.00", img: "" },
+        { name: "Americano", description: "", price: "$2.00", img: "" },
      //   { name: "Macchiato", description: "", price: "4.50", img: "" },
         { name: "Cappuccino", description: "Espresso, steamed milk, foam.", price: "$3.50", img: "" },
         { name: "Hot chocolate", description: "", price: "$3.00", img: "" },
-        { name: "Tea", description: "", price: "100,000L.L", img: "" },
         { name: "Cortado", description: "", price: "$2.00", img: "" },
-        { name: "White Latte", description: "", price: "$5.00", img: "" },
-        { name: "Matcha", description: "", price: "$5.00", img: "" },
-        { name: "V.Matcha", description: "", price: "$6.00", img: "" },
-        { name: "flavored latte", description: "", price: "$4.50", img: "" }
+        { name: "White Latte", description: "", price: "$3.50", img: "" },
+        { name: "Matcha", description: "", price: "$3.50", img: "" },
+        { name: "V.Matcha", description: "", price: "$4.50", img: "" },
+        { name: "Flavored Latte", description: "", price: "$3.50", img: "" },
+        { name: "Tea", description: "", price: "$1.00", img: "" },
+        { name: "Zhorat", description: "", price: "$1.00", img: "" }
     ],
     coldDrinks: {
         milkshakes: [
-            { name: "Chocolate Milkshake", description: "Rich,creamy chocolate blended with ice cream.", price: "$5.00", img: "" },
-            { name: "Strawberry Milkshake", description: "Sweet strawberry flavor with real fruit and cream.", price: "$5.00", img: "" },
-            { name: "Vanillia Milkshake", description: "", price: "$5.00", img: "" }
+            { name: "Chocolate Milkshake", description: "", price: "$3.50", img: "" },
+            { name: "Strawberry Milkshake", description: "", price: "$3.50", img: "" },
+            { name: "Oreo Milkshake", description: "", price: "$3.50", img: "" },
+            { name: "lotus Milkshake", description: "", price: "$3.50", img: "" },
+            { name: "Vanillia Milkshake", description: "", price: "$3.50", img: "" }
+
         ],
         iceCoffee: [
-            { name: "Iced Latte", description: "", price: "$3.50", img: "" },
-            { name: "Iced flavored Latte", description: "", price: "$4.50", img: "" },
+            { name: "Iced Latte", description: "", price: "$3.00", img: "" },
+            { name: "Iced flavored Latte", description: "", price: "$3.50", img: "" },
           //  { name: "Iced mocha", description: "", price: "4.75", img: "" },
-            { name: "Iced Spanish", description: "", price: "$5.00", img: "" },
+            { name: "Iced Spanish", description: "", price: "$4.00", img: "" },
             { name: "Iced Americano", description: "", price: "$2.50", img: "" },
             { name: "Iced Vanilla Matcha", description: "", price: "$6.00", img: "" },
-            { name: "Iced Matcha", description: "", price: "$5.00", img: "" }
+            { name: "Iced Matcha", description: "", price: "$4.00", img: "" }
         ],
         frappes: [
-          //  { name: "vanillia ", description: "", price: "4.50", img: "" },
-            { name: "Mocha and white frappe", description: "", price: "$5.00", img: "" },
-        //    { name: "Matcha", description: "", price: "4.50", img: "" },
-            { name: "Mocha frappe", description: "", price: "$5.00", img: "" },
-            { name: "Caramel frappe", description: "", price: "$5.00", img: "" },
-            { name: "Salted Caramel frappe", description: "", price: "$5.00", img: "" }
+            { name: "vanillia ", description: "", price: "$3.50", img: "" },
+            { name: "Mocha and white frappe", description: "", price: "$3.50", img: "" },
+            { name: "Matcha", description: "", price: "$3.50", img: "" },
+            { name: "Mocha frappe", description: "", price: "$3.50", img: "" },
+            { name: "Caramel frappe", description: "", price: "$3.50", img: "" },
+            { name: "Salted Caramel frappe", description: "", price: "$3.50", img: "" }
 
         ],
         smoothies: [
-            { name: "Mango", description: "", price: "$4.50", img: "" },
-            { name: "Strawberry", description: "", price: "$4.50", img: "" },
-            { name: "Mango & Strawberry", description: "", price: "$4.50", img: "" },
-            { name: "Mix berries", description: "", price: "$4.50", img: "" },
-            { name: "Passion Fruit", description: "", price: "$4.50", img: "" }
+            { name: "Mango", description: "", price: "$3.00", img: "" },
+            { name: "Strawberry", description: "", price: "$3.00", img: "" },
+            { name: "Mango & Strawberry", description: "", price: "$3.00", img: "" },
+            { name: "Mix berries", description: "", price: "$3.00", img: "" },
+            { name: "Passion Fruit", description: "", price: "$3.00", img: "" }
 
         ],
         juices: [
-            { name: "Orange", description: "", price: "$3.00", img: "" },
-            { name: "Lemon", description: "", price: "$3.00", img: "" },
-            { name: "Minted", description: "", price: "$3.00", img: "" },
+            { name: "Orange", description: "", price: "$2.50", img: "" },
+            { name: "Lemon", description: "", price: "$2.50", img: "" },
+            { name: "Minted", description: "", price: "$2.50", img: "" },
         ],
         water: [
-            {name:"500mL water", description: "", price: "50,000L.L", img: ""}
+            {name:"500mL water", description: "", price: "$0.5", img: ""}
         ],
         softDrinks: [
             {name:"Pepsi", description: "", price: "$1.00", img: ""},
@@ -78,27 +84,27 @@ const menuData = {
 
     ],
     shisha: [
-        { name: "Double Apple", description: "", price: "$5.00", img: "" },
-        { name: "Mint", description: "", price: "$5.00", img: "" },
+        { name: "Double Apple", description: "", price: "$4.00", img: "" },
+        { name: "Mint", description: "", price: "$4.00", img: "" },
         { name: "Lemond & Mint", description: "", price: "$5.00", img: "" },
-        { name: "Love", description: "", price: "$5.00", img: "" },
-        { name: "Blueberry", description: "", price: "$5.00", img: "" },
-        { name: "Head Change", description: "", price: "200,000L.L", img: "" }
+        { name: "Love", description: "", price: "$4.00", img: "" },
+        { name: "Blueberry", description: "", price: "$4.00", img: "" },
+        { name: "Head Change", description: "", price: "$2.5", img: "" }
     ],
     food: {
         sandwiches: [
-            { name: "Halloum Pesto", description: "", price: "", img: "" },
-            { name: "Chesse", description: "", price: "", img: "" },
-            { name: "Labne", description: "", price: "", img: "" },
-            { name: "Turkey", description: "", price: "", img: "" }
+            { name: "Halloum Pesto", description: "", price: "$3.00", img: "" },
+            { name: "Chesse", description: "", price: "", img: "$3.00" },
+            { name: "Labne", description: "", price: "", img: "$2.00" },
+            { name: "Turkey", description: "", price: "", img: "$3.00" }
         ],
         saj :[
-            { name: "Zaater", description: "", price: "", img: "" },
-            { name: "Chesse", description: "", price: "", img: "" },
-            { name: "Cocktail", description: "", price: "", img: "" },
-            { name: "Habash", description: "", price: "", img: "" },
-            { name: "Martadela", description: "", price: "", img: "" },
-            { name: "Nutela", description: "", price: "", img: "" }
+            { name: "Zaater", description: "", price: "$1.00", img: "" },
+            { name: "Chesse", description: "", price: "$1.75", img: "" },
+            { name: "Cocktail", description: "", price: "$1.50", img: "" },
+            { name: "Habash", description: "", price: "$2.5", img: "" },
+            { name: "Martadela", description: "", price: "$2.5", img: "" },
+            { name: "Nutela", description: "", price: "$2.5", img: "" }
         ], 
         croissant :[
             { name: "Zaater", description: "", price: "", img: "" },
@@ -106,7 +112,7 @@ const menuData = {
             { name: "Chocolate", description: "", price: "", img: "" }
         ],
         tablye :[
-            {name:"Tablye", description:  "Saj Zaatar/chesse + Halloum 3pcs + Labne + Martedela 2psc + Habsh 2psc + Oives + Tomatoes + Cucumber +Tea/Nesscafe", price: "", img: ""}
+            {name:"Tablye", description:  "Saj Zaatar/chesse + Halloum 3pcs + Labne + Martedela 2psc + Habsh 2psc + Oives + Tomatoes + Cucumber +Tea/Nesscafe", price: "$5.50", img: ""}
         ]
     }
 };
@@ -209,6 +215,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
