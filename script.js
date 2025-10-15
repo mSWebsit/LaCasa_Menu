@@ -1,15 +1,16 @@
 // Menu data
 const menuData = {
     hotDrinks: [
-        { name: "Latte", description: "Coffee with steamed milk.", price: "$2.50", img: "imgs/latte.png" },
-        { name: "Spanish Latte", description: "", price: "$3.50", img: "imgs/spanish_latte.png" },
-        { name: "Mocha Latte", description: "", price: "$3.50", img: "imgs/macha_latte.png" },
-        { name: "Flat white", description: "", price: "$3.00", img: "imgs/flat_white.jpg" },
-        { name: "Espresso", description: "", price: "$1.00", img: "imgs/espresso.jpg" },
-        { name: "Double Espresso", description: "", price: "$1.50", img: "imgs/espresso.jpg" },
+        { name: "Latte", description: "Coffee with steamed milk.", price: "$2.50", img: "" },
+        { name: "Spanish Latte", description: "", price: "$3.50", img: "" },
+        { name: "Mocha Latte", description: "", price: "$3.50", img: "" },
+        { name: "Flat white", description: "", price: "$3.00", img:"" },
+        { name: "Espresso", description: "", price: "$1.00", img: "" },
+        { name: "Double Espresso", description: "", price: "$1.50", img: "" },
         { name: "Nescafe ", description: "3in 1/ coffemet/ milk /nestle", price: "$1.50", img: "" },
      //   { name: "Macchiato", description: "", price: "4.50", img: "" },
         { name: "Cappuccino", description: "Espresso, steamed milk, foam.", price: "$3.50", img: "" },
+        {name:"Cappuccino Turbica" ,description:"",price:"$1.50",img:""},
         { name: "Hot chocolate", description: "", price: "$3.00", img: "" },
         { name: "Cortado", description: "", price: "$2.00", img: "" },
         { name: "White Latte", description: "", price: "$3.50", img: "" },
@@ -213,6 +214,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
