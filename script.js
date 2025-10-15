@@ -106,9 +106,9 @@ const menuData = {
             { name: "Nutela", description: "", price: "$2.5", img: "" }
         ], 
         croissant :[
-            { name: "Zaater", description: "", price: "", img: "" },
-            { name: "Chesse", description: "", price: "", img: "" },
-            { name: "Chocolate", description: "", price: "", img: "" }
+            { name: "Zaater", description: "", price: "", img: "$1.50" },
+            { name: "Chesse", description: "", price: "", img: "$1.50" },
+            { name: "Chocolate", description: "", price: "", img: "$1.50" }
         ],
         tablye :[
             {name:"Tablye", description:  "Saj Zaatar/chesse + Halloum 3pcs + Labne + Martedela 2psc + Habsh 2psc + Oives + Tomatoes + Cucumber +Tea/Nesscafe", price: "$5.50", img: ""}
@@ -214,6 +214,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
