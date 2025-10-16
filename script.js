@@ -72,7 +72,7 @@ const menuData = {
             { name: "Boom Boom Energy Drink", description: "", price: "$2.00", img: "" },
         ]
     },
-    desserts: [
+  /*  desserts: [
         { name: "Nutella Crepe", description: "", price: "5.00", img: "" },
         { name: "Oreo Crepe", description: "", price: "4.00", img: "" },
         { name: "Lotus Crepe", description: "", price: "5.50", img: "" },
@@ -81,7 +81,7 @@ const menuData = {
         { name: "Lazy Cake", description: "", price: "5.50", img: "" },
         { name: "Donuts", description: "", price: "5.50", img: "" },
 
-    ],
+    ],*/
     shisha: [
         { name: "Double Apple", description: "", price: "$4.00", img: "" },
         { name: "Mint", description: "", price: "$4.00", img: "" },
@@ -214,6 +214,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
