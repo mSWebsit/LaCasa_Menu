@@ -114,7 +114,7 @@ const menuData = {
             { name: "Chocolate", description: "", price: "$1.50", img: "" }
         ],
         tablye :[
-            {name:"Tablye", description:  "Saj Zaatar/chesse + Halloum 3pcs + Labne + Martedela 2psc + Habsh 2psc + Oives + Tomatoes + Cucumber +Tea/Nesscafe", price: "$5.50", img: ""}
+            {name:"Tablye", description:  "Saj Zaatar/chesse + Halloum 3pcs + Labne + Martedela 2psc + Habsh 2psc + Oives + Tomatoes + Cucumber +Tea", price: "$5.50", img: ""}
         ]
     }
 };
@@ -217,6 +217,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
