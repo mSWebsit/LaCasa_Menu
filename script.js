@@ -7,7 +7,8 @@ const menuData = {
         { name: "Flat white", description: "", price: "$3.00", img:"" },
         { name: "Espresso", description: "", price: "$1.00", img: "" },
         { name: "Double Espresso", description: "", price: "$1.50", img: "" },
-        { name: "Nescafe ", description: "3in 1/ coffemet/ milk /nestle", price: "$1.50", img: "" },
+        { name: "Nescafe ", description: "coffemet/ milk /nestle", price: "$1.50", img: "" },
+        { name: "Nescafe ", description: "3in 1", price: "$1.00", img: "" },
      //   { name: "Macchiato", description: "", price: "4.50", img: "" },
         { name: "Cappuccino", description: "Espresso, steamed milk, foam.", price: "$3.50", img: "" },
         {name:"Cappuccino Turbica" ,description:"",price:"$1.50",img:""},
@@ -36,12 +37,12 @@ const menuData = {
             { name: "Iced Spanish", description: "", price: "$4.00", img: "" },
             { name: "Iced Americano", description: "", price: "$2.50", img: "" },
             { name: "Iced Vanilla Matcha", description: "", price: "$6.00", img: "" },
-            { name: "Iced Matcha", description: "", price: "$4.00", img: "" }
+            { name: "Iced Matcha", description: "", price: "$5.00", img: "" }
         ],
         frappes: [
             { name: "vanillia ", description: "", price: "$3.50", img: "" },
             { name: "Mocha and white frappe", description: "", price: "$3.50", img: "" },
-            { name: "Matcha", description: "", price: "$3.50", img: "" },
+          //  { name: "Matcha", description: "", price: "$3.50", img: "" },
             { name: "Mocha frappe", description: "", price: "$3.50", img: "" },
             { name: "Caramel frappe", description: "", price: "$3.50", img: "" },
             { name: "Salted Caramel frappe", description: "", price: "$3.50", img: "" }
@@ -51,15 +52,15 @@ const menuData = {
             { name: "Mango", description: "", price: "$3.00", img: "" },
             { name: "Strawberry", description: "", price: "$3.00", img: "" },
             { name: "Mango & Strawberry", description: "", price: "$3.00", img: "" },
-            { name: "Mix berries", description: "", price: "$3.00", img: "" },
-            { name: "Passion Fruit", description: "", price: "$3.00", img: "" }
+           // { name: "Mix berries", description: "", price: "$3.00", img: "" },
+           // { name: "Passion Fruit", description: "", price: "$3.00", img: "" }
 
         ],
-        juices: [
+       /* juices: [
             { name: "Orange", description: "", price: "$2.50", img: "" },
             { name: "Lemon", description: "", price: "$2.50", img: "" },
             { name: "Minted", description: "", price: "$2.50", img: "" },
-        ],
+        ],*/
         water: [
             {name:"500mL water", description: "", price: "$0.5", img: ""}
         ],
@@ -75,13 +76,13 @@ const menuData = {
         ]
     },
     desserts: [
-        { name: "Nutella Crepe", description: "", price: "5.00", img: "" },
+       /* { name: "Nutella Crepe", description: "", price: "5.00", img: "" },
         { name: "Oreo Crepe", description: "", price: "4.00", img: "" },
         { name: "Lotus Crepe", description: "", price: "5.50", img: "" },
         { name: "Kinder Crepe", description: "", price: "5.50", img: "" },
-        { name: "Cookies", description: "", price: "5.50", img: "" },
-        { name: "Lazy Cake", description: "", price: "5.50", img: "" },
-        { name: "Donuts", description: "", price: "5.50", img: "" },
+        { name: "Cookies", description: "", price: "5.50", img: "" },*/
+        { name: "Lazy Cake", description: "", price: "$2.50", img: "" },
+        { name: "Donuts", description: "", price: "$2.50", img: "" },
 
     ],
     shisha: [
@@ -94,10 +95,10 @@ const menuData = {
     ],
     food: {
         sandwiches: [
-            { name: "Halloum Pesto", description: "", price: "$3.00", img: "" },
+            { name: "Halloum Pesto", description: "", price: "$3.50", img: "" },
             { name: "Chesse", description: "", price: "$3.00", img: "" },
             { name: "Labne", description: "", price: "$2.00", img: "" },
-            { name: "Turkey", description: "", price: "$3.00", img: "" }
+            { name: "Turkey", description: "", price: "$3.50", img: "" }
         ],
         saj :[
             { name: "Zaater", description: "", price: "$1.00", img: "" },
@@ -216,6 +217,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
