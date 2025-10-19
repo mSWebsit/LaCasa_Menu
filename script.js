@@ -86,7 +86,7 @@ const menuData = {
     ],
     shisha: [
         { name: "Double Apple", description: "", price: "$4.00", img: "" },
-        { name: "Mint", description: "", price: "$4.00", img: "" },
+        { name: "Grape & Mint", description: "", price: "$4.00", img: "" },
         { name: "Lemond & Mint", description: "", price: "$4.00", img: "" },
         { name: "Love", description: "", price: "$4.00", img: "" },
         { name: "Blueberry", description: "", price: "$4.00", img: "" },
@@ -216,6 +216,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
