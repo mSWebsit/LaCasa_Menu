@@ -66,7 +66,9 @@ const menuData = {
         softDrinks: [
             {name:"Pepsi", description: "", price: "$1.00", img: ""},
             {name:"Miranda", description: "", price: "$1.00", img: ""},
-            {name:"7UP", description: "", price: "$1.00", img: ""}  
+            {name:"7UP", description: "", price: "$1.00", img: ""},
+            {name:"Ice Tea", description: "", price: "$1.00", img: ""}  
+
         ],
        energyDrinks: [
             { name: "Boom Boom Energy Drink", description: "", price: "$2.00", img: "" },
@@ -106,9 +108,9 @@ const menuData = {
             { name: "Nutela", description: "", price: "$2.5", img: "" }
         ], 
         croissant :[
-            { name: "Zaater", description: "", price: "", img: "$1.50" },
-            { name: "Chesse", description: "", price: "", img: "$1.50" },
-            { name: "Chocolate", description: "", price: "", img: "$1.50" }
+            { name: "Zaater", description: "", price: "$1.50", img: "" },
+            { name: "Chesse", description: "", price: "$1.50", img: "" },
+            { name: "Chocolate", description: "", price: "$1.50", img: "" }
         ],
         tablye :[
             {name:"Tablye", description:  "Saj Zaatar/chesse + Halloum 3pcs + Labne + Martedela 2psc + Habsh 2psc + Oives + Tomatoes + Cucumber +Tea/Nesscafe", price: "$5.50", img: ""}
@@ -214,6 +216,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
