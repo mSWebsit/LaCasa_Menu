@@ -62,13 +62,15 @@ const menuData = {
             { name: "Minted", description: "", price: "$2.50", img: "" },
         ],*/
         water: [
-            {name:"500mL water", description: "", price: "$0.5", img: ""}
+            {name:"500mL Water", description: "", price: "$0.5", img: ""},
+            {name:"Sparkling Water",description:"",price:"$1.00",img:""}
         ],
         softDrinks: [
             {name:"Pepsi", description: "", price: "$1.00", img: ""},
             {name:"Miranda", description: "", price: "$1.00", img: ""},
             {name:"7UP", description: "", price: "$1.00", img: ""},
-            {name:"Ice Tea", description: "", price: "$1.00", img: ""}  
+            {name:"Ice Tea", description: "", price: "$1.00", img: ""},
+            {name:"Sparkling Water", description:"",price:"$1.00",img:""}
 
         ],
        energyDrinks: [
@@ -217,6 +219,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
