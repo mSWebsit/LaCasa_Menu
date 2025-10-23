@@ -56,11 +56,11 @@ const menuData = {
            // { name: "Passion Fruit", description: "", price: "$3.00", img: "" }
 
         ],
-       /* juices: [
-            { name: "Orange", description: "", price: "$2.50", img: "" },
-            { name: "Lemon", description: "", price: "$2.50", img: "" },
-            { name: "Minted", description: "", price: "$2.50", img: "" },
-        ],*/
+        juices: [
+          //  { name: "Orange", description: "", price: "$2.50", img: "" },
+            { name: "Lemonade", description: "", price: "$2.50", img: "" },
+            { name: "Minted Lemonade", description: "", price: "$2.50", img: "" },
+        ],
         water: [
             {name:"500mL Water", description: "", price: "$0.5", img: ""},
             {name:"Sparkling Water",description:"",price:"$1.00",img:""}
@@ -219,6 +219,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
