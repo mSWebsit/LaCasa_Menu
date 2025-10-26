@@ -81,10 +81,10 @@ const menuData = {
        /* { name: "Nutella Crepe", description: "", price: "5.00", img: "" },
         { name: "Oreo Crepe", description: "", price: "4.00", img: "" },
         { name: "Lotus Crepe", description: "", price: "5.50", img: "" },
-        { name: "Kinder Crepe", description: "", price: "5.50", img: "" },
-        { name: "Cookies", description: "", price: "5.50", img: "" },*/
-        { name: "Lazy Cake", description: "", price: "$2.50", img: "" },
-        { name: "Donuts", description: "", price: "$2.50", img: "" },
+        { name: "Kinder Crepe", description: "", price: "5.50", img: "" },*/
+        { name: "Cookies", description: "", price: "$1.50", img: "" },
+     //   { name: "Lazy Cake", description: "", price: "$2.50", img: "" },
+      //  { name: "Donuts", description: "", price: "$2.50", img: "" },
 
     ],
     shisha: [
@@ -219,6 +219,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
