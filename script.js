@@ -9,7 +9,6 @@ const menuData = {
         { name: "Double Espresso", description: "", price: "$1.50", img: "" },
         { name: "Nescafe ", description: "coffemet/ milk /nestle", price: "$1.50", img: "" },
         { name: "Nescafe ", description: "3in 1", price: "$1.00", img: "" },
-     //   { name: "Macchiato", description: "", price: "4.50", img: "" },
         { name: "Cappuccino", description: "Espresso, steamed milk, foam.", price: "$3.50", img: "" },
         {name:"Cappuccino Turbica" ,description:"",price:"$1.50",img:""},
         { name: "Hot chocolate", description: "", price: "$3.00", img: "" },
@@ -219,6 +218,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
