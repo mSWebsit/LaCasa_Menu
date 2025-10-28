@@ -7,7 +7,7 @@ const menuData = {
         { name: "Flat white", description: "", price: "$3.00", img:"" },
         { name: "Espresso", description: "", price: "$1.00", img: "" },
         { name: "Double Espresso", description: "", price: "$1.50", img: "" },
-        { name: "Nescafe ", description: "coffemet/ milk /nestle", price: "$1.50", img: "" },
+        { name: "Nescafe ", description: "coffemate/ milk /nestle", price: "$1.50", img: "" },
         { name: "Nescafe ", description: "3in 1", price: "$1.00", img: "" },
         { name: "Cappuccino", description: "Espresso, steamed milk, foam.", price: "$3.50", img: "" },
         {name:"Cappuccino Turbica" ,description:"",price:"$1.50",img:""},
@@ -15,7 +15,7 @@ const menuData = {
         { name: "Cortado", description: "", price: "$2.00", img: "" },
         { name: "White Latte", description: "", price: "$3.50", img: "" },
         { name: "Matcha", description: "", price: "$3.50", img: "" },
-        { name: "V.Matcha", description: "", price: "$4.50", img: "" },
+        { name: "Vanillia Matcha", description: "", price: "$4.50", img: "" },
         { name: "Flavored Latte", description: "", price: "$3.50", img: "" },
         { name: "Tea", description: "", price: "$1.00", img: "" },
         { name: "Zhorat", description: "", price: "$1.00", img: "" }
@@ -31,7 +31,7 @@ const menuData = {
         ],
         iceCoffee: [
             { name: "Iced Latte", description: "", price: "$3.00", img: "" },
-            { name: "Iced flavored Latte", description: "", price: "$3.50", img: "" },
+            { name: "Flavored Iced Latte", description: "", price: "$3.50", img: "" },
           //  { name: "Iced mocha", description: "", price: "4.75", img: "" },
             { name: "Iced Spanish", description: "", price: "$4.00", img: "" },
             { name: "Iced Americano", description: "", price: "$2.50", img: "" },
@@ -39,8 +39,8 @@ const menuData = {
             { name: "Iced Matcha", description: "", price: "$5.00", img: "" }
         ],
         frappes: [
-            { name: "vanillia ", description: "", price: "$3.50", img: "" },
-            { name: "Mocha and white frappe", description: "", price: "$3.50", img: "" },
+            { name: "vanillia frappe", description: "", price: "$3.50", img: "" },
+            { name: "White Mocha frappe", description: "", price: "$3.50", img: "" },
           //  { name: "Matcha", description: "", price: "$3.50", img: "" },
             { name: "Mocha frappe", description: "", price: "$3.50", img: "" },
             { name: "Caramel frappe", description: "", price: "$3.50", img: "" },
@@ -52,7 +52,8 @@ const menuData = {
             { name: "Strawberry", description: "", price: "$3.00", img: "" },
             { name: "Mango & Strawberry", description: "", price: "$3.00", img: "" },
            // { name: "Mix berries", description: "", price: "$3.00", img: "" },
-           // { name: "Passion Fruit", description: "", price: "$3.00", img: "" }
+            { name: "Passion Fruit", description: "", price: "$3.00", img: "" },
+            { name:"Mango and Passion Friut", description: "",price:"$3.00",img:""}
 
         ],
         juices: [
@@ -68,7 +69,7 @@ const menuData = {
             {name:"Pepsi", description: "", price: "$1.00", img: ""},
             {name:"Miranda", description: "", price: "$1.00", img: ""},
             {name:"7UP", description: "", price: "$1.00", img: ""},
-            {name:"Ice Tea", description: "", price: "$1.00", img: ""},
+            {name:"Iced Tea", description: "", price: "$1.00", img: ""},
             {name:"Sparkling Water", description:"",price:"$1.00",img:""}
 
         ],
@@ -89,33 +90,33 @@ const menuData = {
     shisha: [
         { name: "Double Apple", description: "", price: "$4.00", img: "" },
         { name: "Grape & Mint", description: "", price: "$4.00", img: "" },
-        { name: "Lemond & Mint", description: "", price: "$4.00", img: "" },
+        { name: "Lemon & Mint", description: "", price: "$4.00", img: "" },
         { name: "Love", description: "", price: "$4.00", img: "" },
         { name: "Blueberry", description: "", price: "$4.00", img: "" },
         { name: "Head Change", description: "", price: "$2.5", img: "" }
     ],
     food: {
         sandwiches: [
-            { name: "Halloum Pesto", description: "", price: "$3.50", img: "" },
-            { name: "Chesse", description: "", price: "$3.00", img: "" },
+            { name: "Halloumi Pesto", description: "", price: "$3.50", img: "" },
+            { name: "Cheese", description: "", price: "$3.00", img: "" },
             { name: "Labne", description: "", price: "$2.00", img: "" },
             { name: "Turkey", description: "", price: "$3.50", img: "" }
         ],
         saj :[
             { name: "Zaater", description: "", price: "$1.00", img: "" },
-            { name: "Chesse", description: "", price: "$1.75", img: "" },
+            { name: "Cheese", description: "", price: "$1.75", img: "" },
             { name: "Cocktail", description: "", price: "$1.50", img: "" },
             { name: "Habash", description: "", price: "$2.5", img: "" },
-            { name: "Martadela", description: "", price: "$2.5", img: "" },
-            { name: "Nutela", description: "", price: "$2.5", img: "" }
+            { name: "Mortadella", description: "", price: "$2.5", img: "" },
+            { name: "Nutella", description: "", price: "$2.5", img: "" }
         ], 
-        croissant :[
+       /* croissant :[
             { name: "Zaater", description: "", price: "$1.50", img: "" },
-            { name: "Chesse", description: "", price: "$1.50", img: "" },
+            { name: "Cheese", description: "", price: "$1.50", img: "" },
             { name: "Chocolate", description: "", price: "$1.50", img: "" }
-        ],
+        ],*/
         tablye :[
-            {name:"Tablye", description:  "Saj Zaatar/chesse + Halloum 3pcs + Labne + Martedela 2psc + Habsh 2psc + Oives + Tomatoes + Cucumber +Tea", price: "$5.50", img: ""}
+            {name:"Tablye", description:  "Saj Zaatar/cheese + Halloum 3pcs + Labneh + Mortadella 2psc + Habash 2psc + Olives + Tomatoes + Cucumber +Tea", price: "$5.50", img: ""}
         ]
     }
 };
@@ -218,6 +219,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
