@@ -51,7 +51,9 @@ const menuData = {
             { name: "Mango", description: "", price: "$3.00", img: "" },
             { name: "Strawberry", description: "", price: "$3.00", img: "" },
             { name: "Mango & Strawberry", description: "", price: "$3.00", img: "" },
-           // { name: "Mix berries", description: "", price: "$3.00", img: "" },
+            { name: "Blueberry", description:"" , price:"$3.50", img:""},
+            { name:"Roseberry",description:"",price:"$3.50",img:""},
+            { name: "Mix berries", description: "", price: "$3.50", img: "" },
             { name: "Passion Fruit", description: "", price: "$3.00", img: "" },
             { name:"Mango and Passion Friut", description: "",price:"$3.00",img:""}
 
@@ -219,6 +221,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
