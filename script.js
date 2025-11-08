@@ -3,7 +3,7 @@ const menuData = {
     hotDrinks: [
         { name: "Espresso", description: "", price: "$1.00", img: "imgs/items/Espresso.png" },
         { name: "Double Espresso", description: "", price: "$1.50", img: "imgs/items/Espresso.png" },
-        { name: "Sip & Snap", description: "A bold shot of espresso served in a fully edible mug", price: "$1.50", img: "imgs/items/Espresso.png" },
+        { name: "Sip & Snap", description: "A bold shot of espresso served in a fully edible mug", price: "$1.50",img:"" },
 
         { name: "Latte", description: "Coffee with steamed milk.", price: "$2.50", img: "" },
          { name: "White Latte", description: "", price: "$3.50", img: "" },
@@ -34,7 +34,7 @@ const menuData = {
         iceCoffee: [
             { name: "Iced Latte", description: "", price: "$3.00", img: "" },
             { name: "Flavored Iced Latte", description: "caramel/hazelnut/vanilla/mocha", price: "$3.50", img: "" },
-            { name: "Suger Free Flavored Iced Latte", description: "careml/hazelnut/vanilla/mocha", price: "$3.50", img: "" },
+            { name: "Suger Free Flavored Iced Latte", description: "careml/vanilla", price: "$3.50", img: "" },
 
             { name: "Iced Spanish", description: "", price: "$4.00", img: "" },
             { name: "Iced Americano", description: "", price: "$2.50", img: "" },
@@ -137,7 +137,7 @@ const menuData = {
             { name: "Nutella", description: "Plain croissant filled with Nutella chocolate spread.", price: "$2.50", img: "" },
             { name: "lotus", description: "Flaky croissant with smooth Lotus Biscoff filling", price: "$2.50", img: "" },
             { name: "pistachio", description: "plain croissant stuffed with pistachio filling", price: "$3.00", img: "" },
-            { name: "La Casa Croissant", description: "Flaky croissant filled with smooth pistachio cream, Nutella chocolate spread, and fresh strawberry.", price: "$3.00", img: "" },
+            { name: "La Casa Croissant", description: "Flaky croissant filled with smooth pistachio cream, Nutella chocolate spread, and fresh strawberry.", price: "$4.00", img: "" },
         ],
         
     }
@@ -241,6 +241,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
