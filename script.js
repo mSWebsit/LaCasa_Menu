@@ -35,7 +35,7 @@ const menuData = {
           //  { name: "Iced mocha", description: "", price: "4.75", img: "" },
             { name: "Iced Spanish", description: "", price: "$4.00", img: "" },
             { name: "Iced Americano", description: "", price: "$2.50", img: "" },
-            { name: "Iced Vanilla Matcha", description: "", price: "$6.00", img: "" },
+            { name: "Iced Vanilla Matcha", description: "", price: "$5.00", img: "" },
             { name: "Iced Matcha", description: "", price: "$5.00", img: "" }
         ],
         frappes: [
@@ -62,10 +62,12 @@ const menuData = {
           //  { name: "Orange", description: "", price: "$2.50", img: "" },
             { name: "Lemonade", description: "", price: "$2.50", img: "" },
             { name: "Minted Lemonade", description: "", price: "$2.50", img: "" },
+            { name: "Mango", description: "", price: "$3.50", img: "" },
+
         ],
         water: [
             {name:"500mL Water", description: "", price: "$0.5", img: ""},
-            {name:"Sparkling Water",description:"",price:"$1.00",img:""}
+            {name:"Sparkling Water",description:"",price:"$1.00",img:"imgs/items/rim-sparkling-water.png"}
         ],
         softDrinks: [
             {name:"Pepsi", description: "", price: "$1.00", img: "imgs/items/pepsi.png"},
@@ -77,6 +79,8 @@ const menuData = {
         ],
        energyDrinks: [
             { name: "Boom Boom Energy Drink", description: "", price: "$2.00", img: "imgs/items/boom-boom.png" },
+            { name: "Boom Boom Energy Drink", description: "", price: "$2.00", img: "imgs/items/boom-boom.png" },
+
         ]
     },
     desserts: [
@@ -85,6 +89,9 @@ const menuData = {
         { name: "Lotus Crepe", description: "", price: "5.50", img: "" },
         { name: "Kinder Crepe", description: "", price: "5.50", img: "" },*/
         { name: "Cookies", description: "", price: "$1.50", img: "" },
+        { name: "Brownie", description: "", price: "$", img: "" },
+        { name: "Brownie Extra", description: "", price: "$", img: "" },
+
      //   { name: "Lazy Cake", description: "", price: "$2.50", img: "" },
       //  { name: "Donuts", description: "", price: "$2.50", img: "" },
 
@@ -221,6 +228,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
