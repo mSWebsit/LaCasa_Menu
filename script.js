@@ -77,6 +77,7 @@ const menuData = {
             {name:"Miranda", description: "", price: "$1.00", img: "imgs/items/Miranda.png"},
             {name:"7UP", description: "", price: "$1.00", img: "imgs/items/7up.png"},
             {name:"Iced Tea", description: "", price: "$1.00", img: "imgs/items/lipton-ice-tea.png"},
+            {name:"Homemade Ice Tea", description: "", price: "$3.00", img: "" },
             {name:"Sparkling Water", description:"",price:"$1.00",img:"imgs/items/rim-sparkling-water.png"}
 
         ],
@@ -241,6 +242,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
