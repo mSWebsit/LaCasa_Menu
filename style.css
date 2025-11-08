@@ -131,10 +131,6 @@ nav ul li a:focus {
     margin-bottom: 30px;
     font-size: 2rem;
 }
-#energyDrinksGrid{
-    display: flex;
-    justify-content:left;
-}
 
 .menu-grid {
     display: grid;
@@ -325,6 +321,7 @@ nav ul li a:focus {
 
 
 }
+
 
 
 
