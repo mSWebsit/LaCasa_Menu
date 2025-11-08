@@ -69,14 +69,14 @@ const menuData = {
         ],
         softDrinks: [
             {name:"Pepsi", description: "", price: "$1.00", img: "imgs/items/pepsi.png"},
-            {name:"Miranda", description: "", price: "$1.00", img: "imgs/items/Mirinda.png"},
+            {name:"Miranda", description: "", price: "$1.00", img: "imgs/items/Miranda.png"},
             {name:"7UP", description: "", price: "$1.00", img: "imgs/items/7up.png"},
-            {name:"Iced Tea", description: "", price: "$1.00", img: ""},
-            {name:"Sparkling Water", description:"",price:"$1.00",img:""}
+            {name:"Iced Tea", description: "", price: "$1.00", img: "imgs/items/lipton-ice-tea.png"},
+            {name:"Sparkling Water", description:"",price:"$1.00",img:"imgs/items/rim-sparkling-water.png"}
 
         ],
        energyDrinks: [
-            { name: "Boom Boom Energy Drink", description: "", price: "$2.00", img: "" },
+            { name: "Boom Boom Energy Drink", description: "", price: "$2.00", img: "imgs/items/boom-boom.png" },
         ]
     },
     desserts: [
@@ -221,6 +221,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
