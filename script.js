@@ -1,22 +1,24 @@
 // Menu data
 const menuData = {
     hotDrinks: [
-        { name: "Latte", description: "Coffee with steamed milk.", price: "$2.50", img: "" },
-        { name: "Spanish Latte", description: "", price: "$3.50", img: "" },
-        { name: "Mocha Latte", description: "", price: "$3.50", img: "imgs/items/mocca_hot.jpeg" },
-        { name: "Flat white", description: "", price: "$3.00", img:"" },
         { name: "Espresso", description: "", price: "$1.00", img: "imgs/items/Espresso.png" },
         { name: "Double Espresso", description: "", price: "$1.50", img: "imgs/items/Espresso.png" },
+        { name: "Sip & Snap", description: "A bold shot of espresso served in a fully edible mug", price: "$1.50", img: "imgs/items/Espresso.png" },
+
+        { name: "Latte", description: "Coffee with steamed milk.", price: "$2.50", img: "" },
+         { name: "White Latte", description: "", price: "$3.50", img: "" },
+        { name: "Spanish Latte", description: "", price: "$3.50", img: "" },
+        { name: "Mocha Latte", description: "", price: "$3.50", img: "imgs/items/mocca_hot.jpeg" },
+        { name: "Flavored Latte", description: "", price: "$3.50", img: "" },
+        { name: "Flat white", description: "", price: "$3.00", img:"" },
         { name: "Nescafe ", description: "coffemate/ milk /nestle", price: "$1.50", img: "" },
         { name: "Nescafe ", description: "3in 1", price: "$1.00", img: "" },
         { name: "Cappuccino", description: "Espresso, steamed milk, foam.", price: "$3.50", img: "imgs/items/Cappuccino.png" },
         {name:"Cappuccino Turbica" ,description:"",price:"$1.50",img:""},
         { name: "Hot chocolate", description: "", price: "$3.00", img: "" },
         { name: "Cortado", description: "", price: "$2.00", img: "" },
-        { name: "White Latte", description: "", price: "$3.50", img: "" },
         { name: "Matcha", description: "", price: "$3.50", img: "" },
         { name: "Vanillia Matcha", description: "", price: "$4.50", img: "" },
-        { name: "Flavored Latte", description: "", price: "$3.50", img: "" },
         { name: "Tea", description: "", price: "$1.00", img: "" },
         { name: "Zhorat", description: "", price: "$1.00", img: "" }
     ],
@@ -31,12 +33,13 @@ const menuData = {
         ],
         iceCoffee: [
             { name: "Iced Latte", description: "", price: "$3.00", img: "" },
-            { name: "Flavored Iced Latte", description: "", price: "$3.50", img: "" },
-          //  { name: "Iced mocha", description: "", price: "4.75", img: "" },
+            { name: "Flavored Iced Latte", description: "caramel/hazelnut/vanilla/mocha", price: "$3.50", img: "" },
+            { name: "Suger Free Flavored Iced Latte", description: "careml/hazelnut/vanilla/mocha", price: "$3.50", img: "" },
+
             { name: "Iced Spanish", description: "", price: "$4.00", img: "" },
             { name: "Iced Americano", description: "", price: "$2.50", img: "" },
             { name: "Iced Vanilla Matcha", description: "", price: "$5.00", img: "" },
-            { name: "Iced Matcha", description: "", price: "$5.00", img: "" }
+            { name: "Iced Strawberry Matcha", description: "", price: "$5.00", img: "" },
         ],
         frappes: [
             { name: "vanillia frappe", description: "", price: "$3.50", img: "" },
@@ -229,6 +232,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
