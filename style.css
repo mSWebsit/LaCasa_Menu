@@ -253,7 +253,7 @@ nav ul li a:focus {
         width: 100px;
         height: 100px;
         padding-left: 5px;
-    }
+        object-fit:contain;    }
 
     .menu-details {
         font-size: 14px;
@@ -325,6 +325,7 @@ nav ul li a:focus {
 
 
 }
+
 
 
 
