@@ -97,12 +97,12 @@ const menuData = {
 
     ],
     shisha: [
-        { name: "Double Apple", description: "", price: "$4.00", img: "" },
-        { name: "Grape & Mint", description: "", price: "$4.00", img: "" },
-        { name: "Lemon & Mint", description: "", price: "$4.00", img: "" },
-        { name: "Love", description: "", price: "$4.00", img: "" },
-        { name: "Blueberry", description: "", price: "$4.00", img: "" },
-        { name: "Head Change", description: "", price: "$2.5", img: "" }
+        { name: "Double Apple", description: "", price: "$4.00", img: "imgs/items/shisha.png" },
+        { name: "Grape & Mint", description: "", price: "$4.00", img: "imgs/items/shisha.png" },
+        { name: "Lemon & Mint", description: "", price: "$4.00", img: "imgs/items/shisha.png" },
+        { name: "Love", description: "", price: "$4.00", img: "imgs/items/shisha.png" },
+        { name: "Blueberry", description: "", price: "$4.00", img: "imgs/items/shisha.png" },
+        { name: "Head Change", description: "", price: "$2.5", img: "imgs/items/shisha_head.png" }
     ],
     food: {
         sandwiches: [
@@ -228,6 +228,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
