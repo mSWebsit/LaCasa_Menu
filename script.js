@@ -3,13 +3,13 @@ const menuData = {
     hotDrinks: [
         { name: "Latte", description: "Coffee with steamed milk.", price: "$2.50", img: "" },
         { name: "Spanish Latte", description: "", price: "$3.50", img: "" },
-        { name: "Mocha Latte", description: "", price: "$3.50", img: "" },
+        { name: "Mocha Latte", description: "", price: "$3.50", img: "imgs/items/mocca_hot.jpeg" },
         { name: "Flat white", description: "", price: "$3.00", img:"" },
-        { name: "Espresso", description: "", price: "$1.00", img: "" },
-        { name: "Double Espresso", description: "", price: "$1.50", img: "" },
+        { name: "Espresso", description: "", price: "$1.00", img: "imgs/items/Espresso.png" },
+        { name: "Double Espresso", description: "", price: "$1.50", img: "imgs/items/Espresso.png" },
         { name: "Nescafe ", description: "coffemate/ milk /nestle", price: "$1.50", img: "" },
         { name: "Nescafe ", description: "3in 1", price: "$1.00", img: "" },
-        { name: "Cappuccino", description: "Espresso, steamed milk, foam.", price: "$3.50", img: "" },
+        { name: "Cappuccino", description: "Espresso, steamed milk, foam.", price: "$3.50", img: "imgs/items/Cappuccino.png" },
         {name:"Cappuccino Turbica" ,description:"",price:"$1.50",img:""},
         { name: "Hot chocolate", description: "", price: "$3.00", img: "" },
         { name: "Cortado", description: "", price: "$2.00", img: "" },
@@ -25,8 +25,8 @@ const menuData = {
             { name: "Chocolate Milkshake", description: "", price: "$3.50", img: "" },
             { name: "Strawberry Milkshake", description: "", price: "$3.50", img: "" },
             { name: "Oreo Milkshake", description: "", price: "$3.50", img: "" },
-            { name: "lotus Milkshake", description: "", price: "$3.50", img: "" },
-            { name: "Vanillia Milkshake", description: "", price: "$3.50", img: "" }
+            { name: "lotus Milkshake", description: "", price: "$3.50", img: "imgs/items/lutes_shaks.jpeg" },
+            { name: "Vanillia Milkshake", description: "", price: "$3.50", img: "imgs/items/vanila_shake.jpeg" }
 
         ],
         iceCoffee: [
@@ -68,9 +68,9 @@ const menuData = {
             {name:"Sparkling Water",description:"",price:"$1.00",img:""}
         ],
         softDrinks: [
-            {name:"Pepsi", description: "", price: "$1.00", img: ""},
-            {name:"Miranda", description: "", price: "$1.00", img: ""},
-            {name:"7UP", description: "", price: "$1.00", img: ""},
+            {name:"Pepsi", description: "", price: "$1.00", img: "imgs/items/pepsi.png"},
+            {name:"Miranda", description: "", price: "$1.00", img: "imgs/items/Miranda.png"},
+            {name:"7UP", description: "", price: "$1.00", img: "imgs/items/7up.png"},
             {name:"Iced Tea", description: "", price: "$1.00", img: ""},
             {name:"Sparkling Water", description:"",price:"$1.00",img:""}
 
@@ -221,6 +221,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
