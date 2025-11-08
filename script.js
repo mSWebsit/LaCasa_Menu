@@ -82,7 +82,7 @@ const menuData = {
         ],
        energyDrinks: [
             { name: "Boom Boom Energy Drink", description: "", price: "$2.00", img: "imgs/items/boom-boom.png" },
-            { name: "Boom Boom Energy Drink", description: "", price: "$2.00", img: "imgs/items/boom-boom.png" },
+            { name: "Add Grenadine", description: "Add Grenadine to your drink", price: "$0.50", img: "" },
 
         ]
     },
@@ -234,6 +234,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
