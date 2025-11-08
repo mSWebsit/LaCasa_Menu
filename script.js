@@ -92,8 +92,8 @@ const menuData = {
         { name: "Lotus Crepe", description: "", price: "5.50", img: "" },
         { name: "Kinder Crepe", description: "", price: "5.50", img: "" },*/
         { name: "Cookies", description: "", price: "$1.50", img: "" },
-        { name: "Brownie", description: "", price: "$", img: "" },
-        { name: "Brownie Extra", description: "", price: "$", img: "" },
+        { name: "Brownie", description: "classic brownie", price: "$1.50", img: "" },
+        { name: "Brownie Extra", description: "classic brownie filled with Nutella chocolate", price: "$2.50", img: "" },
 
      //   { name: "Lazy Cake", description: "", price: "$2.50", img: "" },
       //  { name: "Donuts", description: "", price: "$2.50", img: "" },
@@ -232,6 +232,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
