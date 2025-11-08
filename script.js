@@ -112,7 +112,6 @@ const menuData = {
             {name:"Tablye", description:  "Saj Zaatar/cheese + Halloum 3pcs + Labneh + Mortadella 2psc + Habash 2psc + Olives + Tomatoes + Cucumber +Tea", price: "$5.50", img: ""}
         ],
         Yogurt Bowls :[
-            {name:"Banana Granola Bowl", description:"", price: "$.0", img: ""},
             {name:"Friut Granola Bowl", description:"", price: "$.0", img: ""}
 
         ],
@@ -242,6 +241,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
