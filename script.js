@@ -108,6 +108,14 @@ const menuData = {
         { name: "Head Change", description: "", price: "$2.5", img: "imgs/items/shisha_head.png" }
     ],
     food: {
+        tablye :[
+            {name:"Tablye", description:  "Saj Zaatar/cheese + Halloum 3pcs + Labneh + Mortadella 2psc + Habash 2psc + Olives + Tomatoes + Cucumber +Tea", price: "$5.50", img: ""}
+        ],
+        Yogurt Bowls :[
+            {name:"Banana Granola Bowl", description:"", price: "$.0", img: ""},
+            {name:"Friut Granola Bowl", description:"", price: "$.0", img: ""}
+
+        ],
         sandwiches: [
             { name: "Halloumi Pesto", description: "", price: "$3.50", img: "" },
             { name: "Cheese", description: "", price: "$3.00", img: "" },
@@ -123,16 +131,16 @@ const menuData = {
             { name: "Nutella", description: "", price: "$2.50", img: "" }
         ], 
         croissant :[
-            { name: "Cheese", description: "plain croissant stuffed with cheese", price: "$.0", img: "" },
-            { name: "Cheese and Olives", description: "plain croissant stuffed with cheese and olives", price: "$.0", img: "" },
-            { name: "Mortadella", description: "plain croissant stuffed with Mortadella,cheese,iceberg,mayo,corn", price: "$.0", img: "" },
-            { name: "Habash", description: "plain croissant stuffed with Habash,cheese,iceberg,mayo,corn", price: "$.0", img: "" },
-            { name: "Nutella", description: "plain croissant stuffed with nutella chocolate filling", price: "$.0", img: "" },
-            { name: "lotus", description: "plain croissant stuffed with lutus filling", price: "$.0", img: "" },
+            { name: "Cheese", description: "Plain croissant filled with melted cheese.", price: "$2.50", img: "" },
+            { name: "Cheese and Olives", description: "Plain croissant filled with mild cheese and sliced olives.", price: "$2.75", img: "" },
+            { name: "Mortadella", description: "Flaky croissant stuffed with mortadella, creamy cheese, crisp iceberg, mayo, and sweet corn", price: "$3.00", img: "" },
+            { name: "Habash", description: "Flaky croissant stuffed with Habash, creamy cheese, crisp iceberg, mayo, and sweet corn", price: "$3.50", img: "" },
+            { name: "Nutella", description: "Plain croissant filled with Nutella chocolate spread.", price: "$2.50", img: "" },
+            { name: "lotus", description: "Flaky croissant with smooth Lotus Biscoff filling", price: "$2.50", img: "" },
+            { name: "pistachio", description: "plain croissant stuffed with pistachio filling", price: "$3.00", img: "" },
+            { name: "La Casa Croissant", description: "Flaky croissant filled with smooth pistachio cream, Nutella chocolate spread, and fresh strawberry.", price: "$3.00", img: "" },
         ],
-        tablye :[
-            {name:"Tablye", description:  "Saj Zaatar/cheese + Halloum 3pcs + Labneh + Mortadella 2psc + Habash 2psc + Olives + Tomatoes + Cucumber +Tea", price: "$5.50", img: ""}
-        ]
+        
     }
 };
 
@@ -234,6 +242,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
