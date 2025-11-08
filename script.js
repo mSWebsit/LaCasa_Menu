@@ -119,11 +119,12 @@ const menuData = {
             { name: "Mortadella", description: "", price: "$2.5", img: "" },
             { name: "Nutella", description: "", price: "$2.5", img: "" }
         ], 
-       /* croissant :[
-            { name: "Zaater", description: "", price: "$1.50", img: "" },
-            { name: "Cheese", description: "", price: "$1.50", img: "" },
-            { name: "Chocolate", description: "", price: "$1.50", img: "" }
-        ],*/
+        croissant :[
+            { name: "Cheese", description: "plane croissant stuffed with cheese", price: "$.0", img: "" },
+            { name: "Cheese and Olives", description: "plane croissant stuffed with cheese and olives", price: "$.0", img: "" },
+            { name: "Nutella", description: "plane croissant stuffed with nutella chocolate filling", price: "$.0", img: "" },
+            { name: "lotus", description: "plane croissant stuffed with lutus filling", price: "$.0", img: "" },
+        ],
         tablye :[
             {name:"Tablye", description:  "Saj Zaatar/cheese + Halloum 3pcs + Labneh + Mortadella 2psc + Habash 2psc + Olives + Tomatoes + Cucumber +Tea", price: "$5.50", img: ""}
         ]
@@ -228,6 +229,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
