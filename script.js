@@ -115,12 +115,12 @@ const menuData = {
             { name: "Turkey", description: "", price: "$3.50", img: "" }
         ],
         saj :[
-            { name: "Zaater", description: "", price: "$1.00", img: "" },
-            { name: "Cheese", description: "", price: "$1.75", img: "" },
-            { name: "Cocktail", description: "", price: "$1.50", img: "" },
-            { name: "Habash", description: "", price: "$2.5", img: "" },
-            { name: "Mortadella", description: "", price: "$2.5", img: "" },
-            { name: "Nutella", description: "", price: "$2.5", img: "" }
+            { name: "Zaater", description: "", price: "$1.25", img: "" },
+            { name: "Cheese", description: "", price: "$2.00", img: "" },
+            { name: "Cocktail", description: "", price: "$1.75", img: "" },
+            { name: "Habash", description: "", price: "$3.00", img: "" },
+            { name: "Mortadella", description: "", price: "$3.00", img: "" },
+            { name: "Nutella", description: "", price: "$2.50", img: "" }
         ], 
         croissant :[
             { name: "Cheese", description: "plain croissant stuffed with cheese", price: "$.0", img: "" },
@@ -234,6 +234,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
