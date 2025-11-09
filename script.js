@@ -136,9 +136,9 @@ const menuData = {
             { name: "Cheese and Olives", description: "Plain croissant filled with mild cheese and sliced olives.", price: "$2.75", img: "" },
             { name: "Mortadella", description: "Flaky croissant stuffed with mortadella, creamy cheese, crisp iceberg, mayo, and sweet corn", price: "$3.00", img: "" },
             { name: "Habash", description: "Flaky croissant stuffed with Habash, creamy cheese, crisp iceberg, mayo, and sweet corn", price: "$3.50", img: "" },
-            { name: "Nutella", description: "Plain croissant filled with Nutella chocolate spread.", price: "$2.50", img: "" },
+            { name: "Nutella", description: "Croissant filled with Nutella chocolate spread.", price: "$2.50", img: "" },
             { name: "lotus", description: "Flaky croissant with smooth Lotus Biscoff filling", price: "$2.50", img: "" },
-            { name: "pistachio", description: "plain croissant stuffed with pistachio filling", price: "$3.00", img: "" },
+            { name: "pistachio", description: "Croissant stuffed with pistachio filling", price: "$3.00", img: "" },
             { name: "La Casa Croissant", description: "Flaky croissant filled with smooth pistachio cream, Nutella chocolate spread, and fresh strawberry.", price: "$4.00", img: "" },
         ],
         
@@ -243,6 +243,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
