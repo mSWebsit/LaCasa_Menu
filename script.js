@@ -19,7 +19,7 @@ const menuData = {
         { name: "Cortado", description: "", price: "$2.00", img: "" },
         { name: "Matcha", description: "", price: "$3.50", img: "" },
         { name: "Vanillia Matcha", description: "", price: "$4.50", img: "" },
-        { name: "Shlab",description:"",price:"$2.50",img:""},
+        { name: "Sahlab",description:"",price:"$2.50",img:""},
         { name: "Tea", description: "", price: "$1.00", img: "" },
         { name: "Zhorat", description: "", price: "$1.00", img: "" }
     ],
@@ -132,13 +132,13 @@ const menuData = {
             { name: "Nutella", description: "", price: "$2.50", img: "" }
         ], 
         croissant :[
-            { name: "Cheese", description: "Plain croissant filled with melted cheese.", price: "$2.50", img: "imgs/items/croissant.png" },
-            { name: "Cheese and Olives", description: "Plain croissant filled with mild cheese and sliced olives.", price: "$2.75", img: "imgs/items/croissant.png" },
+            { name: "Cheese", description: "Flaky croissant filled with melted cheese.", price: "$2.50", img: "imgs/items/croissant.png" },
+            { name: "Cheese and Olives", description: "Flaky croissant filled with mild cheese and sliced olives.", price: "$2.75", img: "imgs/items/croissant.png" },
             { name: "Mortadella", description: "Flaky croissant stuffed with mortadella, creamy cheese, crisp iceberg, mayo, and sweet corn", price: "$3.00", img: "imgs/items/croissant.png" },
             { name: "Habash", description: "Flaky croissant stuffed with Habash, creamy cheese, crisp iceberg, mayo, and sweet corn", price: "$3.50", img: "imgs/items/croissant.png" },
             { name: "Nutella", description: "Croissant filled with Nutella chocolate spread.", price: "$2.50", img: "" },
             { name: "lotus", description: "Flaky croissant with smooth Lotus Biscoff filling", price: "$2.50", img: "" },
-            { name: "pistachio", description: "Croissant stuffed with pistachio filling", price: "$3.00", img: "" },
+            { name: "pistachio", description: "Flaky croissant stuffed with pistachio filling", price: "$3.00", img: "" },
             { name: "La Casa Croissant", description: "Flaky croissant filled with smooth pistachio cream, Nutella chocolate spread, and fresh strawberry.", price: "$4.00", img: "" },
         ],
         
@@ -243,6 +243,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
