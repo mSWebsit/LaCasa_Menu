@@ -56,7 +56,7 @@ const menuData = {
             { name: "Strawberry", description: "", price: "$3.00", img: "" },
             { name: "Mango & Strawberry", description: "", price: "$3.00", img: "" },
             { name: "Blueberry", description:"" , price:"$3.50", img:""},
-            { name:"Roseberry",description:"",price:"$3.50",img:""},
+            { name:"Raspberry",description:"",price:"$3.50",img:""},
             { name: "Mix berries", description: "", price: "$3.50", img: "" },
             { name: "Passion Fruit", description: "", price: "$3.00", img: "" },
             { name:"Mango and Passion Friut", description: "",price:"$3.00",img:""}
@@ -97,7 +97,7 @@ const menuData = {
         { name: "Brownie", description: "classic brownie", price: "$1.50", img: "" },
         { name: "Brownie Extra", description: "classic brownie filled with Nutella chocolate", price: "$2.50", img: "" },
 
-     //   { name: "Lazy Cake", description: "", price: "$2.50", img: "" },
+        { name: "Lazy Cake", description: "", price: "$2.50", img: "" },
       //  { name: "Donuts", description: "", price: "$2.50", img: "" },
 
     ],
@@ -243,6 +243,7 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+
 
 
 
