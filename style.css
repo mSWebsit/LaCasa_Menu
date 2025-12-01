@@ -1,5 +1,5 @@
 :root {
-    --bg-color:background: linear-gradient(to bottom, #001f3f, #ffffff);
+    --bg-color#FBFCF8;
     --card-bg: #ffffff;
     --text-color: #333333;
     --accent-color: #a3c49c;
@@ -26,7 +26,11 @@ html {
 }
 
 body {
-    background: var(--bg-color);
+   /* background: var(--bg-color);*/
+    background: linear-gradient(to bottom, #001f3f, #ffffff);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: var(--text-color);
     line-height: 1.6;
     padding-bottom: 100px;
