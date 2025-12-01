@@ -244,6 +244,7 @@ window.onload = () => {
     window.addEventListener("scroll", handleScroll);
 };
 // christmas
+/*
 const snowContainer = document.getElementById("snowContainer");
 
 function createSnowflake() {
@@ -263,6 +264,7 @@ function createSnowflake() {
 }
 
 setInterval(createSnowflake, 150);
+*/
 
 
 
