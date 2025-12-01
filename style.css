@@ -27,7 +27,7 @@ html {
 
 body {
    /* background: var(--bg-color);*/
-    background: linear-gradient(to bottom, #001f3f, #ffffff);
+    background: linear-gradient(to bottom, #E6DADA 0%, #274046 100%);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -355,6 +355,7 @@ nav ul li a:focus {
         transform: translateY(110vh);
     }
 }
+
 
 
 
