@@ -42,14 +42,19 @@ body {
     
 }
 nav {
-    background: var(--accent-color2);
+    /*background: var(--accent-color2);
     color: #fff;
+    box-shadow: 0 4px 6px var(--card-shadow);*/
+    background-color: #274046;
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+    
     padding: 12px 30px;
     padding-bottom: 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 6px var(--card-shadow);
+    
 }
 
 nav .nav-inner {
@@ -355,6 +360,7 @@ nav ul li a:focus {
         transform: translateY(110vh);
     }
 }
+
 
 
 
