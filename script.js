@@ -243,6 +243,26 @@ window.onload = () => {
     document.getElementById("back-to-top").addEventListener("click", scrollToTop);
     window.addEventListener("scroll", handleScroll);
 };
+// christmas
+const snowContainer = document.getElementById("snowContainer");
+
+function createSnowflake() {
+    const snowflake = document.createElement("div");
+    snowflake.classList.add("snowflake");
+    snowflake.textContent = "❄";
+
+    snowflake.style.left = Math.random() * 100 + "vw";
+    snowflake.style.fontSize = (Math.random() * 10 + 10) + "px";
+    snowflake.style.animationDuration = (Math.random() * 3 + 3) + "s";
+
+    snowContainer.appendChild(snowflake);
+
+    setTimeout(() => {
+        snowflake.remove();
+    }, 6000);
+}
+
+setInterval(createSnowflake, 150);
 
 
 
