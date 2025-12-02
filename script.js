@@ -161,7 +161,7 @@ function createCard(item) {
         const isDark = document.documentElement.getAttribute("data-theme") === "dark";
         
         // 3. Set source
-        this.src = isDark ? "imgs/no_img_dark.jpg" : "imgs/no_img.jpg";
+        this.src = isDark ? "imgs/no_img_dark.png" : "imgs/no_img.jpg";
     };
 
   const details = document.createElement("div");
@@ -289,4 +289,5 @@ function createSnowflake() {
 }
 
 setInterval(createSnowflake, 150);
+
 
