@@ -2,7 +2,8 @@
     --bg-color#FBFCF8;
     --card-bg: #ffffff;
     --text-color: #333333;
-    --accent-color: #a3c49c;
+    /*--accent-color: #a3c49c;*/
+    --accent-color: #e2ebf0 
     /*--accent-color2: #7c9e79; */
     --accent-color2: #274046;
 
@@ -364,6 +365,7 @@ nav ul li a:focus {
         transform: translateY(110vh);
     }
 }
+
 
 
 
