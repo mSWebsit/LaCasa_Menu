@@ -185,7 +185,7 @@ function createCard(item) {
         this.onerror = null;
         this.classList.add("placeholder-img"); 
         const isDark = document.documentElement.getAttribute("data-theme") === "dark";
-        this.src = isDark ? "imgs/no_img_dark.png" : "imgs/no_img.jpg";
+        this.src = isDark ? "imgs/no_img_dark.png" : "imgs/no_img.png";
     };
 
     const details = document.createElement("div");
@@ -347,6 +347,7 @@ function createSnowflake() {
 }
 
 setInterval(createSnowflake, 150);
+
 
 
 
