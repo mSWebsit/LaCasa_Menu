@@ -214,12 +214,29 @@ function renderMenu() {
 function toggleTheme() {
     const root = document.documentElement;
     const btn = document.getElementById("themeToggle");
+    
+    // Select all images currently showing a placeholder
+    const placeholders = document.querySelectorAll(".placeholder-img");
+
     if (root.getAttribute("data-theme") === "dark") {
+        // --- Switching to LIGHT MODE ---
         root.removeAttribute("data-theme");
         btn.textContent = "Dark Mode";
+
+        // Update all placeholders to the light version
+        placeholders.forEach(img => {
+            img.src = "imgs/no_img.jpg";
+        });
+
     } else {
+        // --- Switching to DARK MODE ---
         root.setAttribute("data-theme", "dark");
         btn.textContent = "Light Mode";
+
+        // Update all placeholders to the dark version
+        placeholders.forEach(img => {
+            img.src = "imgs/no_img_dark.jpg"; // Make sure this file exists!
+        });
     }
 }
 
@@ -244,7 +261,7 @@ window.onload = () => {
     window.addEventListener("scroll", handleScroll);
 };
 // christmas
-/*
+
 const snowContainer = document.getElementById("snowContainer");
 
 function createSnowflake() {
@@ -264,52 +281,3 @@ function createSnowflake() {
 }
 
 setInterval(createSnowflake, 150);
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
