@@ -156,7 +156,7 @@ const christmasSpecials = [
     {  targetCategory: "desserts",
         items: [
             { name: "Simit", description: "", price: "$1.50", img: "" },
-            { name: "Lazy Cake", description: "", price: "$2.50", img: "" }
+            { name: "Lazy Cake", description: "", price: "$2.50", img: "" },
             { name: "Cookies", description: "", price: "$1.50", img: "" }
         ]
     },
@@ -347,6 +347,7 @@ function createSnowflake() {
 }
 
 setInterval(createSnowflake, 150);
+
 
 
 
