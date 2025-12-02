@@ -150,20 +150,21 @@ const christmasSpecials = [
         // Target category (supports dot notation for nested categories)
         targetCategory: "hotDrinks", 
         items: [
-            { name: "Gingerbread Latte", description: "Spiced holiday warmth", price: "$4.00", img: "" },
-            { name: "Eggnog Espresso", description: "Creamy eggnog with a shot", price: "$3.50", img: "" }
+            { name: "Chocolate Bombs", description: "Spiced holiday warmth", price: "$4.50", img: "" },
+        ]
+    },
+    {  targetCategory: "desserts",
+        items: [
+            { name: "Simit", description: "", price: "$1.50", img: "" },
+            { name: "Lazy Cake", description: "", price: "$2.50", img: "" }
+            { name: "Cookies", description: "", price: "$1.50", img: "" }
         ]
     },
     {
-        targetCategory: "coldDrinks.frappes", 
+        targetCategory: "food.croissant",
         items: [
-            { name: "Peppermint Mocha Frappe", description: "Minty chocolate delight", price: "$4.50", img: "" }
-        ]
-    },
-    {
-        targetCategory: "desserts",
-        items: [
-            { name: "Christmas Tree Cookie", description: "Sugar cookie with frosting", price: "$2.00", img: "" }
+            { name: "Simit", description: "", price: "$1.50", img: "" },
+
         ]
     }
 ];
@@ -346,6 +347,7 @@ function createSnowflake() {
 }
 
 setInterval(createSnowflake, 150);
+
 
 
 
