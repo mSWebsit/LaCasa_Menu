@@ -152,9 +152,17 @@ function createCard(item) {
     img.src = item.img;
     img.alt = item.name;
     img.onerror = function () {
-    this.onerror = null;
-    this.src = "imgs/no_img.jpg";
-  };
+        this.onerror = null;
+        
+        // 1. Mark this image as a placeholder so we can find it later
+        this.classList.add("placeholder-img"); 
+
+        // 2. Check if we are ALREADY in dark mode to load the correct one initially
+        const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+        
+        // 3. Set source
+        this.src = isDark ? "imgs/no_img_dark.jpg" : "imgs/no_img.jpg";
+    };
 
   const details = document.createElement("div");
   details.className = "menu-details";
@@ -281,3 +289,4 @@ function createSnowflake() {
 }
 
 setInterval(createSnowflake, 150);
+
