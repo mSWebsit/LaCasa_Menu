@@ -170,45 +170,40 @@ const christmasSpecials = [
 function createCard(item) {
     const card = document.createElement("div");
     card.className = "menu-item";
+    
+    // Add special class if it exists (for CSS styling)
     if (item.specialClass) {
         card.classList.add(item.specialClass);
     }
+    
     const img = document.createElement("img");
     img.src = item.img;
     img.alt = item.name;
+    
     img.onerror = function () {
         this.onerror = null;
-        
-        // 1. Mark this image as a placeholder so we can find it later
         this.classList.add("placeholder-img"); 
-
-        // 2. Check if we are ALREADY in dark mode to load the correct one initially
         const isDark = document.documentElement.getAttribute("data-theme") === "dark";
-        
-        // 3. Set source
         this.src = isDark ? "imgs/no_img_dark.png" : "imgs/no_img.jpg";
     };
 
-  const details = document.createElement("div");
-  details.className = "menu-details";
-  details.innerHTML = `
-    <h3>${item.name}</h3>
-    <p>${item.description}</p>
-    <p class="price">${item.price}</p>
-  `;
     const details = document.createElement("div");
     details.className = "menu-details";
+    
+    // Logic to add Emoji if it's a special item
+    const displayName = item.specialClass ? `${item.name} 🎄` : item.name;
+
     details.innerHTML = `
-        <h3>${item.name} ${item.specialClass ? '🎄' : ''}</h3> <!-- Optional Emoji -->
+        <h3>${displayName}</h3>
         <p>${item.description}</p>
         <p class="price">${item.price}</p>
     `;
-  card.appendChild(img);
-  card.appendChild(details);
+    
+    card.appendChild(img);
+    card.appendChild(details);
 
-  return card;
+    return card;
 }
-
 function renderMenu() {
     // Hot Drinks
     const hotGrid = document.getElementById("hotDrinksGrid");
@@ -351,6 +346,7 @@ function createSnowflake() {
 }
 
 setInterval(createSnowflake, 150);
+
 
 
 
