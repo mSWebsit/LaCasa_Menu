@@ -345,7 +345,7 @@ nav ul li a:focus {
     overflow: hidden; 
 }
 
-.enu-item.christmas::after {
+.menu-item.christmas::after {
     content: "New"; /* Text inside the ribbon */
     /* Positioning */
     position: absolute;
@@ -401,5 +401,6 @@ nav ul li a:focus {
         transform: translateY(110vh);
     }
 }
+
 
 
