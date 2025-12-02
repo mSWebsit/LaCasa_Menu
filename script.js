@@ -144,10 +144,35 @@ const menuData = {
         
     }
 };
-
+//christmasSpecials Menu
+const christmasSpecials = [
+    {
+        // Target category (supports dot notation for nested categories)
+        targetCategory: "hotDrinks", 
+        items: [
+            { name: "Gingerbread Latte", description: "Spiced holiday warmth", price: "$4.00", img: "" },
+            { name: "Eggnog Espresso", description: "Creamy eggnog with a shot", price: "$3.50", img: "" }
+        ]
+    },
+    {
+        targetCategory: "coldDrinks.frappes", 
+        items: [
+            { name: "Peppermint Mocha Frappe", description: "Minty chocolate delight", price: "$4.50", img: "" }
+        ]
+    },
+    {
+        targetCategory: "desserts",
+        items: [
+            { name: "Christmas Tree Cookie", description: "Sugar cookie with frosting", price: "$2.00", img: "" }
+        ]
+    }
+];
 function createCard(item) {
     const card = document.createElement("div");
     card.className = "menu-item";
+    if (item.specialClass) {
+        card.classList.add(item.specialClass);
+    }
     const img = document.createElement("img");
     img.src = item.img;
     img.alt = item.name;
@@ -171,7 +196,13 @@ function createCard(item) {
     <p>${item.description}</p>
     <p class="price">${item.price}</p>
   `;
-
+    const details = document.createElement("div");
+    details.className = "menu-details";
+    details.innerHTML = `
+        <h3>${item.name} ${item.specialClass ? '🎄' : ''}</h3> <!-- Optional Emoji -->
+        <p>${item.description}</p>
+        <p class="price">${item.price}</p>
+    `;
   card.appendChild(img);
   card.appendChild(details);
 
@@ -217,7 +248,37 @@ function renderMenu() {
         }
     });
 }
+// Xres
+function injectSeasonalItems(specialsData, className) {
+    specialsData.forEach(group => {
+        // 1. Navigate to the correct array in menuData
+        let targetArray = menuData;
+        const path = group.targetCategory.split('.'); // e.g. ["coldDrinks", "frappes"]
 
+        let validPath = true;
+        for (let key of path) {
+            if (targetArray[key]) {
+                targetArray = targetArray[key];
+            } else {
+                console.warn(`Category path not found: ${group.targetCategory}`);
+                validPath = false;
+                break;
+            }
+        }
+
+        // 2. Inject items if the path is valid and is an array
+        if (validPath && Array.isArray(targetArray)) {
+            group.items.forEach(item => {
+                // Add a property to the item so createCard knows to style it
+                item.specialClass = className; 
+                
+                // Add to the START of the list (unshift) so specials appear first
+                // Or use .push(item) to add to the end
+                targetArray.unshift(item); 
+            });
+        }
+    });
+}
 // Theme toggle
 function toggleTheme() {
     const root = document.documentElement;
@@ -261,6 +322,7 @@ function scrollToTop() {
 // Event bindings
 window.onload = () => {
     window.scrollTo(0 , 0);
+    injectSeasonalItems(christmasSpecials, "christmas");
     renderMenu();
 
     // Other buttons
@@ -289,6 +351,7 @@ function createSnowflake() {
 }
 
 setInterval(createSnowflake, 150);
+
 
 
 
