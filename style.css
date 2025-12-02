@@ -26,11 +26,11 @@ html {
 }
 
 body {
-    background: var(--bg-color);
-   /* background: linear-gradient(to bottom, #E6DADA 0%, #274046 100%);
+    /*background: var(--bg-color);*/
+    background: linear-gradient(to bottom, #E6DADA 0%, #274046 100%);
     background-attachment: fixed;
     background-size: cover;
-    background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
     color: var(--text-color);
     line-height: 1.6;
     padding-bottom: 100px;
@@ -42,13 +42,13 @@ body {
     
 }
 nav {
-    background: var(--accent-color2);
+    /*background: var(--accent-color2);
     color: #fff;
-    box-shadow: 0 4px 6px var(--card-shadow);
-    /*background-color: #274046;
+    box-shadow: 0 4px 6px var(--card-shadow);*/
+    background-color: #274046;
     color: #ffffff;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
-    */
+    
     padding: 12px 30px;
     padding-bottom: 0;
     position: sticky;
@@ -362,6 +362,7 @@ nav ul li a:focus {
         transform: translateY(110vh);
     }
 }
+
 
 
 
