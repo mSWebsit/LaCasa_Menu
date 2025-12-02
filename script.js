@@ -243,7 +243,7 @@ function toggleTheme() {
 
         // Update all placeholders to the dark version
         placeholders.forEach(img => {
-            img.src = "imgs/no_img_dark.pngg"; // Make sure this file exists!
+            img.src = "imgs/no_img_dark.png"; // Make sure this file exists!
         });
     }
 }
@@ -289,6 +289,7 @@ function createSnowflake() {
 }
 
 setInterval(createSnowflake, 150);
+
 
 
 
