@@ -15,7 +15,7 @@ const menuData = {
         { name: "Nescafe ", description: "3in 1", price: "$1.00", img: "" },
         { name: "Cappuccino", description: "Espresso, steamed milk, foam.", price: "$3.50", img: "imgs/items/Cappuccino.png" },
         { name: "Cappuccino Turbica" ,description:"",price:"$1.50",img:""},
-        { name: "Hot chocolate", description: "", price: "$3.00", img: "" },
+        { name: "Hot chocolate", description: "", price: "$3.50", img: "" },
         { name: "Cortado", description: "", price: "$2.00", img: "" },
         { name: "Matcha", description: "", price: "$3.50", img: "" },
         { name: "Vanillia Matcha", description: "", price: "$4.50", img: "" },
@@ -347,6 +347,7 @@ function createSnowflake() {
 }
 
 setInterval(createSnowflake, 150);
+
 
 
 
