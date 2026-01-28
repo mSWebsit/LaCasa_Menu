@@ -334,7 +334,41 @@ nav ul li a:focus {
 
 
 }
+.lantern-container {
+  position: absolute;
+  top: 0;
+  right: 50px; /* Adjust this to move it left/right in your menu */
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+  
+  /* This is the secret: it rotates from the very top point */
+  transform-origin: top center;
+  animation: sway 3.5s ease-in-out infinite;
+}
 
+/* The Hanging String */
+.lantern-rope {
+  width: 2px;
+  height: 40px; /* Adjust length of the rope */
+  background-color: #333;
+}
+
+/* The Lantern Design */
+.lantern {
+  width: 50px;
+  height: 60px;
+  filter: drop-shadow(0 0 10px rgba(241, 196, 15, 0.5)); /* Glow effect */
+}
+
+/* The Sway Animation */
+@keyframes sway {
+  0% { transform: rotate(-8deg); }
+  50% { transform: rotate(8deg); }
+  100% { transform: rotate(-8deg); }
+}
 
 /*-- Christmas ver --*/
 /* .menu-item.christmas {
@@ -393,6 +427,7 @@ nav ul li a:focus {
         transform: translateY(110vh);
     }
 } */
+
 
 
 
