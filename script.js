@@ -4,9 +4,9 @@ const menuData = {
         { name: "Espresso", description: "", price: "$1.00", img: "imgs/items/Espresso.png" },
         { name: "Double Espresso", description: "", price: "$1.50", img: "imgs/items/Espresso.png" },
         { name: "Sip & Snap", description: "A bold shot of espresso served in a fully edible mug", price: "$1.50",img:"" },
-
+        {name: "Chocolate Bombs", description: "Spiced holiday warmth", price: "$4.50", img: ""},
         { name: "Latte", description: "Coffee with steamed milk.", price: "$2.50", img: "" },
-         { name: "White Latte", description: "", price: "$3.50", img: "" },
+        { name: "White Latte", description: "", price: "$3.50", img: "" },
         { name: "Spanish Latte", description: "", price: "$3.50", img: "" },
         { name: "Mocha Latte", description: "", price: "$3.50", img: "imgs/items/mocca_hot.jpeg" },
         { name: "Flavored Latte", description: "", price: "$3.50", img: "" },
@@ -96,7 +96,9 @@ const menuData = {
        // { name: "Cookies", description: "", price: "$1.50", img: "" },
         { name: "Brownie", description: "classic brownie", price: "$1.50", img: "" },
         { name: "Brownie Extra", description: "classic brownie filled with Nutella chocolate", price: "$2.50", img: "" },
-
+        { name: "Simit", description: "", price: "$1.50", img: "" },
+        { name: "Lazy Cake", description: "", price: "$2.50", img: "" },
+        { name: "Cookies", description: "", price: "$1.50", img: "" }
       //  { name: "Lazy Cake", description: "", price: "$2.50", img: "" },
       //  { name: "Donuts", description: "", price: "$2.50", img: "" },
 
@@ -136,6 +138,7 @@ const menuData = {
             { name: "Cheese and Olives", description: "Flaky croissant filled with mild cheese and sliced olives.", price: "$2.75", img: "imgs/items/croissant.png" },
             { name: "Mortadella", description: "Flaky croissant stuffed with mortadella, creamy cheese, crisp iceberg, mayo, and sweet corn", price: "$3.00", img: "imgs/items/croissant.png" },
             { name: "Habash", description: "Flaky croissant stuffed with Habash, creamy cheese, crisp iceberg, mayo, and sweet corn", price: "$3.50", img: "imgs/items/croissant.png" },
+            { name: "Simit", description: "", price: "$1.50", img: "" },
             { name: "Nutella", description: "Croissant filled with Nutella chocolate spread.", price: "$2.50", img: "" },
             { name: "lotus", description: "Flaky croissant with smooth Lotus Biscoff filling", price: "$2.50", img: "" },
             { name: "pistachio", description: "Flaky croissant stuffed with pistachio filling", price: "$3.00", img: "" },
@@ -145,29 +148,26 @@ const menuData = {
     }
 };
 //christmasSpecials Menu
-const christmasSpecials = [
-    {
-        // Target category (supports dot notation for nested categories)
-        targetCategory: "hotDrinks", 
-        items: [
-            { name: "Chocolate Bombs", description: "Spiced holiday warmth", price: "$4.50", img: "" },
-        ]
-    },
-    {  targetCategory: "desserts",
-        items: [
-            { name: "Simit", description: "", price: "$1.50", img: "" },
-            { name: "Lazy Cake", description: "", price: "$2.50", img: "" },
-            { name: "Cookies", description: "", price: "$1.50", img: "" }
-        ]
-    },
-    {
-        targetCategory: "food.croissant",
-        items: [
-            { name: "Simit", description: "", price: "$1.50", img: "" },
 
-        ]
-    }
-];
+// const christmasSpecials = [
+//     {
+//         // Target category (supports dot notation for nested categories)
+//         targetCategory: "hotDrinks", 
+//         items: [
+//         ]
+//     },
+//     {  targetCategory: "desserts",
+//         items: [
+            
+//         ]
+//     },
+//     {
+//         targetCategory: "food.croissant",
+//         items: [
+
+//         ]
+//     }
+// ];
 function createCard(item) {
     const card = document.createElement("div");
     card.className = "menu-item";
@@ -245,36 +245,36 @@ function renderMenu() {
     });
 }
 // Xres
-function injectSeasonalItems(specialsData, className) {
-    specialsData.forEach(group => {
-        // 1. Navigate to the correct array in menuData
-        let targetArray = menuData;
-        const path = group.targetCategory.split('.'); // e.g. ["coldDrinks", "frappes"]
+// function injectSeasonalItems(specialsData, className) {
+//     specialsData.forEach(group => {
+//         // 1. Navigate to the correct array in menuData
+//         let targetArray = menuData;
+//         const path = group.targetCategory.split('.'); // e.g. ["coldDrinks", "frappes"]
 
-        let validPath = true;
-        for (let key of path) {
-            if (targetArray[key]) {
-                targetArray = targetArray[key];
-            } else {
-                console.warn(`Category path not found: ${group.targetCategory}`);
-                validPath = false;
-                break;
-            }
-        }
+//         let validPath = true;
+//         for (let key of path) {
+//             if (targetArray[key]) {
+//                 targetArray = targetArray[key];
+//             } else {
+//                 console.warn(`Category path not found: ${group.targetCategory}`);
+//                 validPath = false;
+//                 break;
+//             }
+//         }
 
-        // 2. Inject items if the path is valid and is an array
-        if (validPath && Array.isArray(targetArray)) {
-            group.items.forEach(item => {
-                // Add a property to the item so createCard knows to style it
-                item.specialClass = className; 
+//         // 2. Inject items if the path is valid and is an array
+//         if (validPath && Array.isArray(targetArray)) {
+//             group.items.forEach(item => {
+//                 // Add a property to the item so createCard knows to style it
+//                 item.specialClass = className; 
                 
-                // Add to the START of the list (unshift) so specials appear first
-                // Or use .push(item) to add to the end
-                targetArray.unshift(item); 
-            });
-        }
-    });
-}
+//                 // Add to the START of the list (unshift) so specials appear first
+//                 // Or use .push(item) to add to the end
+//                 targetArray.unshift(item); 
+//             });
+//         }
+//     });
+// }
 // Theme toggle
 function toggleTheme() {
     const root = document.documentElement;
@@ -328,34 +328,22 @@ window.onload = () => {
 };
 // christmas
 
-const snowContainer = document.getElementById("snowContainer");
+// const snowContainer = document.getElementById("snowContainer");
 
-function createSnowflake() {
-    const snowflake = document.createElement("div");
-    snowflake.classList.add("snowflake");
-    snowflake.textContent = "❄";
+// function createSnowflake() {
+//     const snowflake = document.createElement("div");
+//     snowflake.classList.add("snowflake");
+//     snowflake.textContent = "❄";
 
-    snowflake.style.left = Math.random() * 100 + "vw";
-    snowflake.style.fontSize = (Math.random() * 10 + 10) + "px";
-    snowflake.style.animationDuration = (Math.random() * 3 + 3) + "s";
+//     snowflake.style.left = Math.random() * 100 + "vw";
+//     snowflake.style.fontSize = (Math.random() * 10 + 10) + "px";
+//     snowflake.style.animationDuration = (Math.random() * 3 + 3) + "s";
 
-    snowContainer.appendChild(snowflake);
+//     snowContainer.appendChild(snowflake);
 
-    setTimeout(() => {
-        snowflake.remove();
-    }, 6000);
-}
+//     setTimeout(() => {
+//         snowflake.remove();
+//     }, 6000);
+// }
 
-setInterval(createSnowflake, 150);
-
-
-
-
-
-
-
-
-
-
-
-
+// setInterval(createSnowflake, 150);
