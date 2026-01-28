@@ -5,7 +5,7 @@
     --accent-color: #a3c49c;
     /*x --accent-color: #597288;  */
     /* --accent-color2: #7c9e79;  */
-    --accent-color2: #120e0d; 
+    --accent-color2: #3273DC; 
 
     /*x --accent-color2: #274046; */
 
@@ -447,6 +447,7 @@ nav ul li a:focus {
         transform: translateY(110vh);
     }
 } */
+
 
 
 
