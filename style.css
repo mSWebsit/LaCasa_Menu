@@ -2,10 +2,10 @@
     --bg-color#FBFCF8;
     --card-bg: #ffffff;
     --text-color: #333333;
-    /*--accent-color: #a3c49c;*/
-    --accent-color: #597288; 
-    /*--accent-color2: #7c9e79; */
-    --accent-color2: #274046;
+    --accent-color: #a3c49c;
+    /*x --accent-color: #597288;  */
+    --accent-color2: #7c9e79; 
+    /*x --accent-color2: #274046; */
 
     --card-shadow: rgba(0, 0, 0, 0.1);
 }
@@ -29,7 +29,7 @@ html {
 }
 
 body {
-    /*background: var(--bg-color);*/
+    background: var(--bg-color);
     background: linear-gradient(to bottom, #E6DADA 0%, #274046 100%);
     background-attachment: fixed;
     background-size: cover;
@@ -45,9 +45,9 @@ body {
     
 }
 nav {
-    /*background: var(--accent-color2);
+    background: var(--accent-color2);
     color: #fff;
-    box-shadow: 0 4px 6px var(--card-shadow);*/
+    box-shadow: 0 4px 6px var(--card-shadow);
     background-color: #274046;
     color: #ffffff;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
@@ -338,38 +338,32 @@ nav ul li a:focus {
 
 
 /*-- Christmas ver --*/
-.menu-item.christmas {
-    border: 2px solid #d42426; /* Red Border */
+/* .menu-item.christmas {
+    border: 2px solid #d42426; 
     background-color: #fff5f5; 
     position: relative; 
     overflow: hidden; 
 }
 
 .menu-item.christmas::after {
-    content: "New"; /* Text inside the ribbon */
-    /* Positioning */
+    content: "New"; 
     position: absolute;
-    top: 15px;    /* Adjusts how far down */
-    right: -30px; /* Adjusts horizontal position (negative moves it right) */
-    /* Shape and Rotation */
+    top: 15px;    
+    right: -30px;
     width: 120px;
-    transform: rotate(45deg); /* Rotates it diagonally */
-    /* Colors */
-    background-color: #d32f2f; /* Christmas Red */
+    transform: rotate(45deg);
+    background-color: #d32f2f;
     color: white;
-    /* Text Styling */
     text-align: center;
     font-size: 0.8rem;
     font-weight: bold;
     font-family: sans-serif;
     padding: 5px 0;
-    /* Shadow for 3D effect */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     z-index: 1;
 }
-/* Dark mode adjustment for christmas items */
 [data-theme="dark"] .menu-item.christmas {
-    background-color: #2a0a0a; /* Very dark red/black */
+    background-color: #2a0a0a; 
     border-color: #ef5350;
 }
 
@@ -382,7 +376,6 @@ nav ul li a:focus {
     pointer-events: none;
     overflow: hidden;
     z-index: 9998;
-    /* behind Santa, but above background */
 }
 
 .snowflake {
@@ -400,7 +393,8 @@ nav ul li a:focus {
     to {
         transform: translateY(110vh);
     }
-}
+} */
+
 
 
 
