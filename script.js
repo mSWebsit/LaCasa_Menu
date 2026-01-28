@@ -318,7 +318,7 @@ function scrollToTop() {
 // Event bindings
 window.onload = () => {
     window.scrollTo(0 , 0);
-    injectSeasonalItems(christmasSpecials, "christmas");
+//X    injectSeasonalItems(christmasSpecials, "christmas");
     renderMenu();
 
     // Other buttons
@@ -347,3 +347,4 @@ window.onload = () => {
 // }
 
 // setInterval(createSnowflake, 150);
+
