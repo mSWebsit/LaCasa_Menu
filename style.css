@@ -334,42 +334,60 @@ nav ul li a:focus {
 
 
 }
-.lantern-container {
+/* 1. The Container: Positions it and acts as the pivot point */
+.hanging-lantern-container {
   position: absolute;
   top: 0;
-  right: 50px; /* Adjust this to move it left/right in your menu */
-  width: 60px;
+  right: 10%; /* Adjust to move it left or right */
+  z-index: 9999;
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 1000;
   
-  /* This is the secret: it rotates from the very top point */
+  /* PIVOT POINT: This makes it swing from the top of the chain */
   transform-origin: top center;
-  animation: sway 3.5s ease-in-out infinite;
+  animation: realisticSway 5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
 }
 
-/* The Hanging String */
-.lantern-rope {
-  width: 2px;
-  height: 40px; /* Adjust length of the rope */
-  background-color: #333;
+/* 2. The Chain: Made with a metallic gradient */
+.lantern-chain {
+  width: 3px;
+  height: 80px; /* Adjust length of the chain */
+  background: linear-gradient(to bottom, #1a1a1a 0%, #4d4d4d 50%, #1a1a1a 100%);
+  box-shadow: 1px 0 2px rgba(0,0,0,0.5);
 }
 
-/* The Lantern Design */
-.lantern {
-  width: 50px;
-  height: 60px;
-  filter: drop-shadow(0 0 10px rgba(241, 196, 15, 0.5)); /* Glow effect */
+/* 3. The Lantern Image: Realistic shadow and sizing */
+.realistic-lantern {
+  width: 100px; /* Adjust size */
+  height: auto;
+  margin-top: -5px; /* Pulls it up to connect to the chain */
+  filter: drop-shadow(0 0 15px rgba(255, 165, 0, 0.6)); /* Warm glow */
+  animation: flameFlicker 0.2s infinite alternate;
 }
 
-/* The Sway Animation */
-@keyframes sway {
-  0% { transform: rotate(-8deg); }
-  50% { transform: rotate(8deg); }
-  100% { transform: rotate(-8deg); }
+/* 4. The Animation: Pendulum Motion */
+@keyframes realisticSway {
+  0% { transform: rotate(-6deg); }
+  50% { transform: rotate(6deg); }
+  100% { transform: rotate(-6deg); }
 }
 
+/* 5. The Flicker: Subtle brightness changes to simulate a real flame */
+@keyframes flameFlicker {
+  0% { filter: drop-shadow(0 0 15px rgba(255, 165, 0, 0.6)) brightness(1); }
+  100% { filter: drop-shadow(0 0 20px rgba(255, 140, 0, 0.8)) brightness(1.1); }
+}
+
+/* 6. Optional: Light casting on your menu */
+.lantern-glow {
+  position: absolute;
+  bottom: -20px;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, rgba(255,165,0,0.2) 0%, rgba(255,165,0,0) 70%);
+  pointer-events: none;
+}
 /*-- Christmas ver --*/
 /* .menu-item.christmas {
     border: 2px solid #d42426; 
@@ -427,6 +445,7 @@ nav ul li a:focus {
         transform: translateY(110vh);
     }
 } */
+
 
 
 
