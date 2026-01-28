@@ -290,7 +290,7 @@ function toggleTheme() {
 
         // Update all placeholders to the light version
         placeholders.forEach(img => {
-            img.src = "imgs/no_img.jpg";
+            img.src = "imgs/no_img.png";
         });
 
     } else {
@@ -347,4 +347,5 @@ window.onload = () => {
 // }
 
 // setInterval(createSnowflake, 150);
+
 
