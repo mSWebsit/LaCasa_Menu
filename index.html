@@ -11,8 +11,29 @@
 </head>
 
 <body>
+  <div class="lantern-container">
+  <!-- The Rope -->
+  <div class="lantern-rope"></div>
+  
+  <!-- The Lantern (SVG) -->
+  <div class="lantern">
+    <svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+      <!-- Top Cap -->
+      <path d="M30 30 L50 10 L70 30 Z" fill="#e74c3c" />
+      <!-- Main Body -->
+      <rect x="25" y="30" width="50" height="60" rx="5" fill="#c0392b" />
+      <!-- Inner Light -->
+      <rect x="35" y="40" width="30" height="40" rx="3" fill="#f1c40f">
+         <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite" />
+      </rect>
+      <!-- Bottom Tassel -->
+      <rect x="48" y="90" width="4" height="20" fill="#e74c3c" />
+    </svg>
+  </div>
+</div>
    <!--X <div id="snowContainer"></div>  -->
   <nav>
+    
     <div class="nav-inner">
      
       <!--X <div class="logo"><img src='imgs/chrismas_logo.png' alt='La Casa'></div> -->
@@ -112,6 +133,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
