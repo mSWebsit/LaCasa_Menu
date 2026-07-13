@@ -1,12 +1,13 @@
 :root {
-    /* --bg-color#FBFCF8; */
-    --bg-color: #fff3e0;
+    --bg-color:#FBFCF8;
+    
     --card-bg: #ffffff;
     --text-color: #333333;
     --accent-color: #a3c49c;
     --accent-color2: #7c9e79; 
     /*r --accent-color: #A36B3D; */
     /*r --accent-color2: #582C07;  */
+    /*r --bg-color: #fff3e0;  */
     /*x --accent-color: #597288;  */
     /*x --accent-color2: #274046; */
 
